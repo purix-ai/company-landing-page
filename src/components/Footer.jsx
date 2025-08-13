@@ -1,5 +1,6 @@
 import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   const { t } = useTranslation()
@@ -67,9 +68,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/blog" className="text-gray-400 hover:text-white transition-colors">
                   {t('footer.links.blog')}
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">

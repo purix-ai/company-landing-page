@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Detection Test</title>
+</head>
+<body>
+    <h2>Browser Language Detection Test</h2>
+    <p>Your browser language: <strong id="lang"></strong></p>
+    <p>Would get: <strong id="result"></strong></p>
+    
+    <script>
+        const browserLang = navigator.language || navigator.languages?.[0];
+        document.getElementById('lang').textContent = browserLang;
+        
+        // Simulate our detection logic
+        if (browserLang === 'zh-TW') {
+            document.getElementById('result').textContent = 'Traditional Chinese (繁體中文)';
+        } else {
+            document.getElementById('result').textContent = 'English';
+        }
+        
+        console.log('Browser languages:', navigator.languages);
+    </script>
+</body>
+</html>
