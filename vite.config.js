@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/company-landing-page/', // Replace with your repo name
+  base: '/', // Using custom domain www.purix.ai
 })
