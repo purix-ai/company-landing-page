@@ -126,7 +126,11 @@ const Blog = () => {
 
         {loading && (
           <div className="text-center py-12">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto"></div>
+            <div 
+              className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto"
+              role="progressbar"
+              aria-label={i18n.language === 'zh-TW' ? '正在載入部落格文章' : 'Loading blog posts'}
+            ></div>
             <p className="mt-4 text-gray-600">
               {i18n.language === 'zh-TW' ? '載入中...' : 'Loading...'}
             </p>

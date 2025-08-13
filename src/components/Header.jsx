@@ -33,7 +33,7 @@ const Header = () => {
             />
           </div>
           
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8" aria-label="Desktop navigation">
             <button 
               onClick={() => scrollToSection('features')}
               className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
@@ -49,6 +49,7 @@ const Header = () => {
             <Link 
               to="/blog"
               className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+              aria-label="Blog (desktop navigation)"
             >
               {t('footer.links.blog')}
             </Link>
@@ -56,15 +57,17 @@ const Header = () => {
             <button 
               onClick={() => scrollToSection('waitlist')}
               className="px-4 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full font-medium hover:shadow-lg transition-shadow"
+              aria-label="Join waitlist (desktop navigation)"
             >
               {t('header.joinWaitlist')}
             </button>
           </nav>
 
-          <div className="flex items-center gap-2 md:hidden">
+          <nav className="flex items-center gap-2 md:hidden" aria-label="Mobile navigation">
             <Link 
               to="/blog"
               className="text-gray-700 hover:text-primary-600 transition-colors text-sm font-medium"
+              aria-label="Blog (mobile navigation)"
             >
               {t('footer.links.blog')}
             </Link>
@@ -72,10 +75,11 @@ const Header = () => {
             <button 
               onClick={() => scrollToSection('waitlist')}
               className="px-4 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-medium"
+              aria-label="Join waitlist (mobile navigation)"
             >
               {t('header.joinWaitlist')}
             </button>
-          </div>
+          </nav>
         </div>
       </div>
     </header>

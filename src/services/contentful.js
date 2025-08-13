@@ -25,10 +25,6 @@ export const getBlogPosts = async (language = 'en-US') => {
     })
     
     return response.items.map(item => {
-      console.log('DEBUG - Available field names:', Object.keys(item.fields))
-      console.log('DEBUG - Content field value:', item.fields.content)
-      console.log('DEBUG - Excerpt field value:', item.fields.excerpt)
-      
       return {
         id: item.sys.id,
         title: item.fields.title,
