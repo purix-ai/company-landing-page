@@ -1,6 +1,8 @@
 import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const { t } = useTranslation()
   const currentYear = new Date().getFullYear()
   
   return (
@@ -12,8 +14,7 @@ const Footer = () => {
               Purix
             </h3>
             <p className="text-gray-400 mb-4 max-w-md">
-              Building the future of educational technology. Wonderix is our flagship product 
-              that makes game-based learning accessible to everyone.
+              {t('footer.tagline')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -32,52 +33,52 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Product</h4>
+            <h4 className="font-semibold mb-4">{t('footer.product')}</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#features" className="text-gray-400 hover:text-white transition-colors">
-                  Features
+                  {t('footer.links.features')}
                 </a>
               </li>
               <li>
                 <a href="#how-it-works" className="text-gray-400 hover:text-white transition-colors">
-                  How It Works
+                  {t('footer.links.howItWorks')}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Pricing
+                  {t('footer.links.pricing')}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Roadmap
+                  {t('footer.links.roadmap')}
                 </a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-semibold mb-4">{t('footer.company')}</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  About Us
+                  {t('footer.links.aboutUs')}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Blog
+                  {t('footer.links.blog')}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Careers
+                  {t('footer.links.careers')}
                 </a>
               </li>
               <li>
                 <a href="mailto:hello@purix.com" className="text-gray-400 hover:text-white transition-colors">
-                  Contact
+                  {t('footer.links.contact')}
                 </a>
               </li>
             </ul>
@@ -87,17 +88,17 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} Purix. All rights reserved.
+              {t('footer.legal.copyright', { year: currentYear })}
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Privacy Policy
+                {t('footer.legal.privacy')}
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Terms of Service
+                {t('footer.legal.terms')}
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Cookie Policy
+                {t('footer.legal.cookies')}
               </a>
             </div>
           </div>

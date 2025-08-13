@@ -1,6 +1,8 @@
 import { FaRocket, FaPlay } from 'react-icons/fa'
+import { useTranslation } from 'react-i18next'
 
 const Hero = () => {
+  const { t } = useTranslation()
   const scrollToWaitlist = () => {
     document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -21,20 +23,18 @@ const Hero = () => {
             <div className="text-center lg:text-left flex-1">
               <div className="mb-6 inline-flex items-center px-3 py-1 rounded-full bg-purple-100 text-primary-600 text-sm font-medium">
                 <FaRocket className="mr-2" />
-                Introducing Wonderix
+                {t('hero.introducing')}
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
-                Build Educational Games with{' '}
+                {t('hero.headline')}{' '}
                 <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
-                  AI in Minutes
+                  {t('hero.headlineHighlight')}
                 </span>
               </h1>
           
               <p className="text-xl text-gray-600 mb-8 max-w-2xl animate-slide-up">
-                Wonderix empowers teachers and parents to create engaging learning experiences
-                through conversation. No coding required—just describe your game idea and watch 
-                AI bring it to life.
+                {t('hero.description')}
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-slide-up">
@@ -42,12 +42,12 @@ const Hero = () => {
                   onClick={scrollToWaitlist}
                   className="px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
                 >
-                  Join the Waitlist
+                  {t('hero.joinWaitlist')}
                 </button>
                 {/* Demo button - uncomment when video is ready
                 <button className="px-8 py-4 bg-white text-gray-700 rounded-full font-semibold text-lg border-2 border-gray-200 hover:border-primary-500 transition-colors flex items-center justify-center gap-2">
                   <FaPlay className="text-primary-600" />
-                  Watch Demo
+                  {t('hero.watchDemo')}
                 </button>
                 */}
               </div>
@@ -57,15 +57,15 @@ const Hero = () => {
           <div className="mt-12 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
               <div className="text-3xl font-bold text-gray-900">0</div>
-              <div className="text-sm text-gray-600">Coding Required</div>
+              <div className="text-sm text-gray-600">{t('hero.stats.noCoding')}</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-gray-900">15min</div>
-              <div className="text-sm text-gray-600">To First Game</div>
+              <div className="text-sm text-gray-600">{t('hero.stats.timeToGame')}</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-gray-900">100%</div>
-              <div className="text-sm text-gray-600">AI-Powered</div>
+              <div className="text-sm text-gray-600">{t('hero.stats.aiPowered')}</div>
             </div>
           </div>
         </div>

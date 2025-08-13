@@ -1,4 +1,9 @@
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from './LanguageSwitcher'
+
 const Header = () => {
+  const { t } = useTranslation()
+  
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -20,28 +25,32 @@ const Header = () => {
               onClick={() => scrollToSection('features')}
               className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
             >
-              Features
+              {t('header.features')}
             </button>
             <button 
               onClick={() => scrollToSection('how-it-works')}
               className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
             >
-              How It Works
+              {t('header.howItWorks')}
             </button>
+            <LanguageSwitcher />
             <button 
               onClick={() => scrollToSection('waitlist')}
               className="px-4 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full font-medium hover:shadow-lg transition-shadow"
             >
-              Join Waitlist
+              {t('header.joinWaitlist')}
             </button>
           </nav>
 
-          <button 
-            onClick={() => scrollToSection('waitlist')}
-            className="md:hidden px-4 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-medium"
-          >
-            Join Waitlist
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <LanguageSwitcher />
+            <button 
+              onClick={() => scrollToSection('waitlist')}
+              className="px-4 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-medium"
+            >
+              {t('header.joinWaitlist')}
+            </button>
+          </div>
         </div>
       </div>
     </header>

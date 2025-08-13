@@ -1,0 +1,115 @@
+{
+  "header": {
+    "features": "功能特色",
+    "howItWorks": "使用方式",
+    "joinWaitlist": "加入等候名單"
+  },
+  "hero": {
+    "introducing": "隆重推出 Wonderix",
+    "headline": "用 AI 在幾分鐘內",
+    "headlineHighlight": "打造教育遊戲",
+    "description": "Wonderix 讓老師和家長透過對話就能創造引人入勝的學習體驗。無需編程——只要描述你的遊戲想法，看著 AI 將它變為現實。",
+    "joinWaitlist": "加入等候名單",
+    "watchDemo": "觀看示範",
+    "stats": {
+      "noCoding": "需要編程",
+      "timeToGame": "完成首個遊戲",
+      "aiPowered": "AI 驅動"
+    }
+  },
+  "features": {
+    "title": "創造精彩教育遊戲的",
+    "titleHighlight": "一切所需",
+    "subtitle": "Wonderix 結合 AI 的力量與直覺設計，幫助你打造孩子喜愛、人人都能創作的遊戲。",
+    "items": {
+      "noCode": {
+        "title": "無程式碼平台",
+        "description": "透過簡單對話創造複雜的教育遊戲。描述你想要的，AI 會處理其餘部分。"
+      },
+      "aiPowered": {
+        "title": "AI 驅動創作",
+        "description": "先進的 AI 理解教育目標，自動生成引人入勝、適齡的內容。"
+      },
+      "madeForEveryone": {
+        "title": "為所有人打造",
+        "description": "直覺的教育內容創作工具。完美適合老師、家長，以及任何想讓學習變有趣的人。"
+      },
+      "engagingGames": {
+        "title": "引人入勝的遊戲",
+        "description": "孩子喜歡透過遊戲學習。創造拼圖、測驗、冒險等等，讓教育變有趣。"
+      },
+      "customizable": {
+        "title": "完全客製化",
+        "description": "個人化角色、主題、難度等級和學習目標，符合你的需求。"
+      },
+      "trackProgress": {
+        "title": "追蹤進度",
+        "description": "內建分析工具幫助你了解學生的學習狀況，以及需要額外支援的地方。"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "三個簡單步驟",
+    "titleHighlight": "創造遊戲",
+    "subtitle": "不需要技術技能。如果你能描述它，Wonderix 就能建造它。",
+    "steps": {
+      "describe": {
+        "title": "描述你的遊戲",
+        "description": "告訴 Wonderix 你想創造什麼樣的教育遊戲。指定主題、年齡層和學習目標。"
+      },
+      "aiCreates": {
+        "title": "AI 即時創造",
+        "description": "我們的 AI 理解你的需求，生成完整、可玩的遊戲，包含圖形、機制和教育內容。"
+      },
+      "sharePlay": {
+        "title": "分享與遊玩",
+        "description": "如需要可自訂，然後與學生分享你的遊戲。追蹤他們的進度，隨著學習調整難度。"
+      }
+    },
+    "averageTime": "平均完成首個遊戲時間：",
+    "timeValue": "15 分鐘內"
+  },
+  "waitlist": {
+    "badge": "成為首批用戶",
+    "subtitle": "加入我們的專屬等候名單，搶先體驗 Wonderix",
+    "whyJoin": "為什麼要加入等候名單？",
+    "benefits": {
+      "earlyAccess": {
+        "title": "搶先體驗：",
+        "description": "成為第一批在我們推出時試用 Wonderix 的用戶"
+      },
+      "exclusivePricing": {
+        "title": "獨家優惠：",
+        "description": "作為早期支持者獲得終身折扣"
+      },
+      "shapeProduct": {
+        "title": "塑造產品：",
+        "description": "你的回饋將直接影響我們的開發"
+      }
+    },
+    "joinButton": "立即加入等候名單",
+    "noSpam": "絕不發送垃圾郵件。我們只會向你發送 Wonderix 更新資訊。",
+    "betaRelease": "測試版發布"
+  },
+  "footer": {
+    "tagline": "打造教育科技的未來。Wonderix 是我們的旗艦產品，讓遊戲化學習觸手可及。",
+    "product": "產品",
+    "company": "公司",
+    "links": {
+      "features": "功能特色",
+      "howItWorks": "使用方式",
+      "pricing": "價格方案",
+      "roadmap": "產品路線圖",
+      "aboutUs": "關於我們",
+      "blog": "部落格",
+      "careers": "職涯機會",
+      "contact": "聯絡我們"
+    },
+    "legal": {
+      "copyright": "© {year} Purix. 保留所有權利。",
+      "privacy": "隱私政策",
+      "terms": "服務條款",
+      "cookies": "Cookie 政策"
+    }
+  }
+}

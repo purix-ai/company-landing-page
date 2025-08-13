@@ -1,0 +1,115 @@
+{
+  "header": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "joinWaitlist": "Join Waitlist"
+  },
+  "hero": {
+    "introducing": "Introducing Wonderix",
+    "headline": "Build Educational Games with",
+    "headlineHighlight": "AI in Minutes",
+    "description": "Wonderix empowers teachers and parents to create engaging learning experiences through conversation. No coding required—just describe your game idea and watch AI bring it to life.",
+    "joinWaitlist": "Join the Waitlist",
+    "watchDemo": "Watch Demo",
+    "stats": {
+      "noCoding": "Coding Required",
+      "timeToGame": "To First Game",
+      "aiPowered": "AI-Powered"
+    }
+  },
+  "features": {
+    "title": "Everything You Need to Create",
+    "titleHighlight": "Amazing Educational Games",
+    "subtitle": "Wonderix combines the power of AI with intuitive design to help you build games that kids love and everyone can create.",
+    "items": {
+      "noCode": {
+        "title": "No-Code Platform",
+        "description": "Create complex educational games through simple conversations. Describe what you want, and AI handles the rest."
+      },
+      "aiPowered": {
+        "title": "AI-Powered Creation",
+        "description": "Advanced AI understands educational objectives and automatically generates engaging, age-appropriate content."
+      },
+      "madeForEveryone": {
+        "title": "Made for Everyone",
+        "description": "Intuitive tools for creating educational content. Perfect for teachers, parents, and anyone who wants to make learning fun."
+      },
+      "engagingGames": {
+        "title": "Engaging Games",
+        "description": "Kids love learning through play. Create puzzles, quizzes, adventures, and more to make education fun."
+      },
+      "customizable": {
+        "title": "Fully Customizable",
+        "description": "Personalize characters, themes, difficulty levels, and learning objectives to match your needs."
+      },
+      "trackProgress": {
+        "title": "Track Progress",
+        "description": "Built-in analytics help you understand how students are learning and where they need extra support."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Create Games in",
+    "titleHighlight": "Three Simple Steps",
+    "subtitle": "No technical skills needed. If you can describe it, Wonderix can build it.",
+    "steps": {
+      "describe": {
+        "title": "Describe Your Game",
+        "description": "Tell Wonderix what kind of educational game you want to create. Specify the subject, age group, and learning objectives."
+      },
+      "aiCreates": {
+        "title": "AI Creates Instantly",
+        "description": "Our AI understands your requirements and generates a complete, playable game with graphics, mechanics, and educational content."
+      },
+      "sharePlay": {
+        "title": "Share & Play",
+        "description": "Customize if needed, then share your game with students. Track their progress and adjust difficulty as they learn."
+      }
+    },
+    "averageTime": "Average time to first game:",
+    "timeValue": "Under 15 minutes"
+  },
+  "waitlist": {
+    "badge": "Be Among the First",
+    "subtitle": "Join our exclusive waitlist and get early access to Wonderix",
+    "whyJoin": "Why Join the Waitlist?",
+    "benefits": {
+      "earlyAccess": {
+        "title": "Early Access:",
+        "description": "Be the first to try Wonderix when we launch"
+      },
+      "exclusivePricing": {
+        "title": "Exclusive Pricing:",
+        "description": "Get a lifetime discount as an early supporter"
+      },
+      "shapeProduct": {
+        "title": "Shape the Product:",
+        "description": "Your feedback will directly influence our development"
+      }
+    },
+    "joinButton": "Join the Waitlist Now",
+    "noSpam": "No spam, ever. We'll only email you about Wonderix updates.",
+    "betaRelease": "Beta Release"
+  },
+  "footer": {
+    "tagline": "Building the future of educational technology. Wonderix is our flagship product that makes game-based learning accessible to everyone.",
+    "product": "Product",
+    "company": "Company",
+    "links": {
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "pricing": "Pricing",
+      "roadmap": "Roadmap",
+      "aboutUs": "About Us",
+      "blog": "Blog",
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "legal": {
+      "copyright": "© {year} Purix. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    }
+  }
+}

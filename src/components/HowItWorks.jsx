@@ -1,26 +1,29 @@
 import { FaComments, FaMagic, FaShare } from 'react-icons/fa'
+import { useTranslation } from 'react-i18next'
 
 const HowItWorks = () => {
+  const { t } = useTranslation()
+
   const steps = [
     {
       number: '01',
       icon: <FaComments className="text-3xl" />,
-      title: 'Describe Your Game',
-      description: 'Tell Wonderix what kind of educational game you want to create. Specify the subject, age group, and learning objectives.',
+      titleKey: 'howItWorks.steps.describe.title',
+      descriptionKey: 'howItWorks.steps.describe.description',
       color: 'from-primary-500 to-primary-600'
     },
     {
       number: '02',
       icon: <FaMagic className="text-3xl" />,
-      title: 'AI Creates Instantly',
-      description: 'Our AI understands your requirements and generates a complete, playable game with graphics, mechanics, and educational content.',
+      titleKey: 'howItWorks.steps.aiCreates.title',
+      descriptionKey: 'howItWorks.steps.aiCreates.description',
       color: 'from-secondary-500 to-secondary-600'
     },
     {
       number: '03',
       icon: <FaShare className="text-3xl" />,
-      title: 'Share & Play',
-      description: 'Customize if needed, then share your game with students. Track their progress and adjust difficulty as they learn.',
+      titleKey: 'howItWorks.steps.sharePlay.title',
+      descriptionKey: 'howItWorks.steps.sharePlay.description',
       color: 'from-green-500 to-green-600'
     }
   ]
@@ -30,13 +33,13 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Create Games in{' '}
             <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
-              Three Simple Steps
-            </span>
+              {t('howItWorks.titleHighlight')}
+            </span>{' '}
+            {t('howItWorks.title')}
           </h2>
           <p className="text-lg text-gray-600">
-            No technical skills needed. If you can describe it, Wonderix can build it.
+            {t('howItWorks.subtitle')}
           </p>
         </div>
 
@@ -56,11 +59,11 @@ const HowItWorks = () => {
                   </div>
                   
                   <h3 className="text-xl font-bold text-gray-900 mb-3 relative z-10">
-                    {step.title}
+                    {t(step.titleKey)}
                   </h3>
                   
                   <p className="text-gray-600 relative z-10">
-                    {step.description}
+                    {t(step.descriptionKey)}
                   </p>
                 </div>
 
@@ -79,9 +82,9 @@ const HowItWorks = () => {
         <div className="mt-16 text-center">
           <div className="inline-flex items-center justify-center p-6 bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl">
             <div className="text-left">
-              <p className="text-sm text-gray-600 mb-1">Average time to first game:</p>
+              <p className="text-sm text-gray-600 mb-1">{t('howItWorks.averageTime')}</p>
               <p className="text-3xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
-                Under 15 minutes
+                {t('howItWorks.timeValue')}
               </p>
             </div>
           </div>

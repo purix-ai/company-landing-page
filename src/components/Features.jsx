@@ -1,41 +1,44 @@
 import { FaCode, FaRobot, FaGraduationCap, FaGamepad, FaPalette, FaChartLine } from 'react-icons/fa'
+import { useTranslation } from 'react-i18next'
 
 const Features = () => {
+  const { t } = useTranslation()
+
   const features = [
     {
       icon: <FaCode className="text-3xl" />,
-      title: 'No-Code Platform',
-      description: 'Create complex educational games through simple conversations. Describe what you want, and AI handles the rest.',
+      titleKey: 'features.items.noCode.title',
+      descriptionKey: 'features.items.noCode.description',
       color: 'from-purple-500 to-purple-600'
     },
     {
       icon: <FaRobot className="text-3xl" />,
-      title: 'AI-Powered Creation',
-      description: 'Advanced AI understands educational objectives and automatically generates engaging, age-appropriate content.',
+      titleKey: 'features.items.aiPowered.title',
+      descriptionKey: 'features.items.aiPowered.description',
       color: 'from-blue-500 to-blue-600'
     },
     {
       icon: <FaGraduationCap className="text-3xl" />,
-      title: 'Made for Everyone',
-      description: 'Intuitive tools for creating educational content. Perfect for teachers, parents, and anyone who wants to make learning fun.',
+      titleKey: 'features.items.madeForEveryone.title',
+      descriptionKey: 'features.items.madeForEveryone.description',
       color: 'from-green-500 to-green-600'
     },
     {
       icon: <FaGamepad className="text-3xl" />,
-      title: 'Engaging Games',
-      description: 'Kids love learning through play. Create puzzles, quizzes, adventures, and more to make education fun.',
+      titleKey: 'features.items.engagingGames.title',
+      descriptionKey: 'features.items.engagingGames.description',
       color: 'from-orange-500 to-orange-600'
     },
     {
       icon: <FaPalette className="text-3xl" />,
-      title: 'Fully Customizable',
-      description: 'Personalize characters, themes, difficulty levels, and learning objectives to match your needs.',
+      titleKey: 'features.items.customizable.title',
+      descriptionKey: 'features.items.customizable.description',
       color: 'from-pink-500 to-pink-600'
     },
     {
       icon: <FaChartLine className="text-3xl" />,
-      title: 'Track Progress',
-      description: 'Built-in analytics help you understand how students are learning and where they need extra support.',
+      titleKey: 'features.items.trackProgress.title',
+      descriptionKey: 'features.items.trackProgress.description',
       color: 'from-indigo-500 to-indigo-600'
     }
   ]
@@ -45,14 +48,13 @@ const Features = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Everything You Need to Create{' '}
+            {t('features.title')}{' '}
             <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
-              Amazing Educational Games
+              {t('features.titleHighlight')}
             </span>
           </h2>
           <p className="text-lg text-gray-600">
-            Wonderix combines the power of AI with intuitive design to help you build 
-            games that kids love and everyone can create.
+            {t('features.subtitle')}
           </p>
         </div>
 
@@ -66,10 +68,10 @@ const Features = () => {
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                {feature.title}
+                {t(feature.titleKey)}
               </h3>
               <p className="text-gray-600">
-                {feature.description}
+                {t(feature.descriptionKey)}
               </p>
             </div>
           ))}

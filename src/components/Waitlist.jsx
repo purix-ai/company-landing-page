@@ -1,6 +1,9 @@
 import { FaEnvelope, FaCheckCircle, FaUsers } from 'react-icons/fa'
+import { useTranslation } from 'react-i18next'
 
 const Waitlist = () => {
+  const { t } = useTranslation()
+  
   // Replace this with your actual Google Form URL
   const GOOGLE_FORM_URL = 'https://forms.google.com/your-form-url-here'
   
@@ -16,35 +19,35 @@ const Waitlist = () => {
             <div className="bg-gradient-to-r from-primary-600 to-secondary-600 p-8 text-white text-center">
               <FaUsers className="text-5xl mx-auto mb-4 opacity-90" />
               <h2 className="text-3xl sm:text-4xl font-bold mb-2">
-                Be Among the First
+                {t('waitlist.badge')}
               </h2>
               <p className="text-lg opacity-90">
-                Join our exclusive waitlist and get early access to Wonderix
+                {t('waitlist.subtitle')}
               </p>
             </div>
             
             <div className="p-8 lg:p-12">
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Why Join the Waitlist?
+                  {t('waitlist.whyJoin')}
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-start">
                     <FaCheckCircle className="text-green-500 mt-1 mr-3 flex-shrink-0" />
                     <p className="text-gray-700">
-                      <span className="font-semibold">Early Access:</span> Be the first to try Wonderix when we launch
+                      <span className="font-semibold">{t('waitlist.benefits.earlyAccess.title')}</span> {t('waitlist.benefits.earlyAccess.description')}
                     </p>
                   </div>
                   <div className="flex items-start">
                     <FaCheckCircle className="text-green-500 mt-1 mr-3 flex-shrink-0" />
                     <p className="text-gray-700">
-                      <span className="font-semibold">Exclusive Pricing:</span> Get a lifetime discount as an early supporter
+                      <span className="font-semibold">{t('waitlist.benefits.exclusivePricing.title')}</span> {t('waitlist.benefits.exclusivePricing.description')}
                     </p>
                   </div>
                   <div className="flex items-start">
                     <FaCheckCircle className="text-green-500 mt-1 mr-3 flex-shrink-0" />
                     <p className="text-gray-700">
-                      <span className="font-semibold">Shape the Product:</span> Your feedback will directly influence our development
+                      <span className="font-semibold">{t('waitlist.benefits.shapeProduct.title')}</span> {t('waitlist.benefits.shapeProduct.description')}
                     </p>
                   </div>
                 </div>
@@ -57,17 +60,17 @@ const Waitlist = () => {
                     className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
                   >
                     <FaEnvelope className="mr-3" />
-                    Join the Waitlist Now
+                    {t('waitlist.joinButton')}
                   </button>
                   
                   <p className="mt-4 text-sm text-gray-600">
-                    No spam, ever. We'll only email you about Wonderix updates.
+                    {t('waitlist.noSpam')}
                   </p>
 
                   <div className="mt-6 flex items-center justify-center">
                     <div className="text-center">
                       <p className="text-2xl font-bold text-gray-900">Q3 2025</p>
-                      <p className="text-sm text-gray-600">Beta Release</p>
+                      <p className="text-sm text-gray-600">{t('waitlist.betaRelease')}</p>
                     </div>
                   </div>
                 </div>
