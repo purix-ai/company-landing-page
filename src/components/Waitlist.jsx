@@ -64,12 +64,7 @@ const Waitlist = () => {
                     No spam, ever. We'll only email you about Wonderix updates.
                   </p>
 
-                  <div className="mt-6 flex items-center justify-center space-x-8">
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-gray-900">500+</p>
-                      <p className="text-sm text-gray-600">Parents & Teachers Waiting</p>
-                    </div>
-                    <div className="w-px h-12 bg-gray-300"></div>
+                  <div className="mt-6 flex items-center justify-center">
                     <div className="text-center">
                       <p className="text-2xl font-bold text-gray-900">Q4 2025</p>
                       <p className="text-sm text-gray-600">Expected Launch</p>
