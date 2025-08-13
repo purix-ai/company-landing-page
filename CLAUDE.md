@@ -82,11 +82,23 @@ Uncomment these sections when demo video is ready.
 - Waitlist benefits: Early access, lifetime discount, shape the product
 
 ## Deployment
-Ready for deployment on:
-- Vercel (recommended)
-- Netlify
-- GitHub Pages
-- Any static hosting service
+
+### GitHub Pages (Current Setup)
+This project is configured to deploy automatically to GitHub Pages using GitHub Actions:
+
+1. **Automatic Deployment**: Every push to `main` branch triggers a build and deploy
+2. **Custom Domain**: Configure in repository settings if needed
+3. **Base Path**: Currently set to `/company-landing-page/` in `vite.config.js`
+
+**Manual Setup Required:**
+1. Go to repository Settings → Pages
+2. Set Source to "GitHub Actions"
+3. The workflow will handle the rest automatically
+
+### Alternative Deployment Options
+- **Vercel**: Connect GitHub repo for automatic deployment
+- **Netlify**: Drag and drop `dist/` folder or connect repo  
+- **Custom Domain**: Update `base` in `vite.config.js` to `/` for root deployment
 
 Build output will be in `dist/` directory.
 
