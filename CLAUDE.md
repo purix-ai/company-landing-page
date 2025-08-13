@@ -1,0 +1,102 @@
+# Purix Landing Page - Project Documentation
+
+## Project Overview
+A modern, minimalistic landing page for Purix featuring Wonderix - an AI-powered no-code platform for teachers and parents to build educational games through conversation.
+
+## Tech Stack
+- **React 18.3** with functional components and hooks
+- **Vite** for fast development and optimized builds
+- **Tailwind CSS** for utility-first styling
+- **React Icons** for iconography
+
+## Development Commands
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Run linter
+npm run lint
+```
+
+## Project Structure
+```
+src/
+├── components/
+│   ├── Header.jsx       - Navigation with Wonderix logo
+│   ├── Hero.jsx         - Main hero with logo, headline, CTA
+│   ├── Features.jsx     - 6 key features grid
+│   ├── HowItWorks.jsx   - 3-step process visualization
+│   ├── Waitlist.jsx     - Google Form integration for waitlist
+│   └── Footer.jsx       - Company info and links
+├── App.jsx              - Main app component
+├── main.jsx            - React entry point
+└── index.css           - Tailwind styles
+```
+
+## Key Features
+- Responsive design (mobile-first)
+- Smooth animations and transitions
+- Google Forms integration for waitlist
+- Purple/blue gradient color scheme
+- Clean, minimalistic design
+
+## Important Configuration
+
+### Google Form Integration
+The waitlist uses Google Forms. To set up:
+1. Create a Google Form with fields: Name, Email, Role (Teacher/Parent/Other), Message (optional)
+2. Update the URL in `src/components/Waitlist.jsx:5`:
+```javascript
+const GOOGLE_FORM_URL = 'https://forms.google.com/your-actual-form-url'
+```
+
+### Logo Files
+- Header logo: `/public/logo.png` (small version)
+- Hero logo: `/public/logo_1024x1024.png` (large version)
+
+## Hidden Features (Ready to Enable)
+- **Demo Video Button**: Commented out in `Hero.jsx:47-52`
+- **Demo Video Section**: Commented out in `Hero.jsx:73-82`
+
+Uncomment these sections when demo video is ready.
+
+## Color Scheme
+- Primary: Purple (#6B46C1)
+- Secondary: Blue (#2563EB)
+- Configured in `tailwind.config.js`
+
+## Content Updates
+- Target audience: Teachers AND parents (not just educators)
+- No curriculum alignment focus
+- Launch date: Q4 2025
+- Time to first game: 15 minutes
+- Waitlist benefits: Early access, lifetime discount, shape the product
+
+## Deployment
+Ready for deployment on:
+- Vercel (recommended)
+- Netlify
+- GitHub Pages
+- Any static hosting service
+
+Build output will be in `dist/` directory.
+
+## Contact Placeholder
+Replace `hello@purix.com` in Footer component with actual contact email.
+
+## Testing Checklist
+- [ ] All navigation links work
+- [ ] Smooth scrolling to sections
+- [ ] Google Form opens correctly
+- [ ] Responsive on all devices
+- [ ] Images load properly
+- [ ] No console errors
