@@ -5,8 +5,36 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import enUS from './locales/en-US.json'
 import zhTW from './locales/zh-TW.json'
 
+// Custom language detector for Taiwan-specific detection
+const customDetector = {
+  name: 'taiwanDetector',
+  lookup() {
+    // Check if user has manually selected a language (stored in localStorage)
+    const stored = localStorage.getItem('i18nextLng')
+    if (stored) return stored
+    
+    // Check browser language
+    const browserLang = navigator.language || navigator.languages?.[0]
+    
+    // Only show Chinese for Taiwan users (zh-TW)
+    if (browserLang === 'zh-TW') {
+      return 'zh-TW'
+    }
+    
+    // All other users get English
+    return 'en-US'
+  },
+  cacheUserLanguage(lng) {
+    localStorage.setItem('i18nextLng', lng)
+  }
+}
+
+// Create a new language detector instance
+const languageDetector = new LanguageDetector()
+languageDetector.addDetector(customDetector)
+
 i18n
-  .use(LanguageDetector)
+  .use(languageDetector)
   .use(initReactI18next)
   .init({
     resources: {
@@ -17,13 +45,12 @@ i18n
         translation: zhTW
       }
     },
-    fallbackLng: 'zh-TW', // Default to zh-TW
-    lng: 'zh-TW', // Set initial language to zh-TW
+    fallbackLng: 'en-US', // Default to English for all non-Taiwan users
     interpolation: {
       escapeValue: false // React already does escaping
     },
     detection: {
-      order: ['localStorage', 'navigator'],
+      order: ['taiwanDetector'], // Use our custom detector
       caches: ['localStorage']
     }
   })
