@@ -66,8 +66,8 @@ const Waitlist = () => {
 
                   <div className="mt-6 flex items-center justify-center">
                     <div className="text-center">
-                      <p className="text-2xl font-bold text-gray-900">Q4 2025</p>
-                      <p className="text-sm text-gray-600">Expected Launch</p>
+                      <p className="text-2xl font-bold text-gray-900">Q3 2025</p>
+                      <p className="text-sm text-gray-600">Beta Release</p>
                     </div>
                   </div>
                 </div>
