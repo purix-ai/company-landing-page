@@ -52,12 +52,12 @@ src/
 ## Important Configuration
 
 ### Google Form Integration
-The waitlist uses Google Forms. To set up:
-1. Create a Google Form with fields: Name, Email, Role (Teacher/Parent/Other), Message (optional)
-2. Update the URL in `src/components/Waitlist.jsx:5`:
-```javascript
-const GOOGLE_FORM_URL = 'https://forms.google.com/your-actual-form-url'
-```
+The waitlist uses Google Forms with language-specific forms:
+- **Traditional Chinese (zh-TW)**: https://forms.gle/W2ByQBXBbGzwjRP97
+- **English (en-US)**: https://forms.gle/B191TLxbes4rnDDn9
+
+The forms are automatically selected based on the user's language setting.
+URLs are configured in `src/components/Waitlist.jsx` lines 8-11.
 
 ### Logo Files
 - Header logo: `/public/logo.png` (small version)

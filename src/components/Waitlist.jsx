@@ -2,13 +2,18 @@ import { FaEnvelope, FaCheckCircle, FaUsers } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next'
 
 const Waitlist = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   
-  // Replace this with your actual Google Form URL
-  const GOOGLE_FORM_URL = 'https://forms.google.com/your-form-url-here'
+  // Google Form URLs for different languages
+  const GOOGLE_FORM_URLS = {
+    'zh-TW': 'https://forms.gle/W2ByQBXBbGzwjRP97',
+    'en-US': 'https://forms.gle/B191TLxbes4rnDDn9'
+  }
   
   const handleJoinWaitlist = () => {
-    window.open(GOOGLE_FORM_URL, '_blank', 'noopener,noreferrer')
+    // Get the appropriate form URL based on current language
+    const formUrl = GOOGLE_FORM_URLS[i18n.language] || GOOGLE_FORM_URLS['en-US']
+    window.open(formUrl, '_blank', 'noopener,noreferrer')
   }
 
   return (
