@@ -1,12 +1,24 @@
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import LanguageSwitcher from './LanguageSwitcher'
 
 const Header = () => {
   const { t } = useTranslation()
+  const navigate = useNavigate()
+  const location = useLocation()
   
   const scrollToSection = (sectionId) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+    // If we're not on the home page, navigate to home first
+    if (location.pathname !== '/') {
+      navigate('/')
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    } else {
+      // We're already on home page, just scroll
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+    }
   }
 
   return (
