@@ -123,16 +123,6 @@ const Blog = () => {
   return (
     <div className="pt-24 pb-16 min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <header className="text-center mb-12">
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            {i18n.language === 'zh-TW' ? 'Purix 部落格' : 'Purix Blog'}
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {i18n.language === 'zh-TW' 
-              ? '探索教育科技的未來，了解 AI 如何改變學習體驗。' 
-              : 'Exploring the future of educational technology and how AI is transforming learning experiences.'}
-          </p>
-        </header>
 
         {loading && (
           <div className="text-center py-12">

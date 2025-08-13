@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import LanguageSwitcher from './LanguageSwitcher'
 
 const Header = () => {
@@ -33,6 +34,12 @@ const Header = () => {
             >
               {t('header.howItWorks')}
             </button>
+            <Link 
+              to="/blog"
+              className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+            >
+              {t('footer.links.blog')}
+            </Link>
             <LanguageSwitcher />
             <button 
               onClick={() => scrollToSection('waitlist')}
@@ -43,6 +50,12 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-2 md:hidden">
+            <Link 
+              to="/blog"
+              className="text-gray-700 hover:text-primary-600 transition-colors text-sm font-medium"
+            >
+              {t('footer.links.blog')}
+            </Link>
             <LanguageSwitcher />
             <button 
               onClick={() => scrollToSection('waitlist')}
