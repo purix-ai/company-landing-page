@@ -77,14 +77,14 @@ describe('Blog', () => {
     })
   })
 
-  it('opens individual post when clicked', async () => {
+  it('renders blog post links correctly', async () => {
     const mockPosts = [
       {
         id: '1',
         title: 'Test Blog Post',
         excerpt: 'This is a test excerpt',
         publishedDate: '2024-01-01',
-        content: { nodeType: 'document', content: [] }
+        slug: 'test-blog-post'
       }
     ]
     
@@ -93,24 +93,19 @@ describe('Blog', () => {
     render(<Blog />)
     
     await waitFor(() => {
-      const postCard = screen.getByText('Test Blog Post').closest('article')
-      fireEvent.click(postCard)
-    })
-    
-    await waitFor(() => {
-      expect(screen.getByText('Back to Blog')).toBeInTheDocument()
-      expect(screen.getByText('Rendered content')).toBeInTheDocument()
+      const postLink = screen.getByRole('link', { name: /Test Blog Post/i }).closest('a')
+      expect(postLink).toHaveAttribute('href', '/blog/test-blog-post')
     })
   })
 
-  it('goes back to blog list from individual post', async () => {
+  it('renders blog post links without slug using id', async () => {
     const mockPosts = [
       {
-        id: '1',
-        title: 'Test Blog Post',
+        id: '123',
+        title: 'Test Blog Post Without Slug',
         excerpt: 'This is a test excerpt',
-        publishedDate: '2024-01-01',
-        content: { nodeType: 'document', content: [] }
+        publishedDate: '2024-01-01'
+        // No slug field
       }
     ]
     
@@ -118,32 +113,25 @@ describe('Blog', () => {
     
     render(<Blog />)
     
-    // Click on post
     await waitFor(() => {
-      const postCard = screen.getByText('Test Blog Post').closest('article')
-      fireEvent.click(postCard)
-    })
-    
-    // Click back button
-    await waitFor(() => {
-      const backButton = screen.getByText('Back to Blog')
-      fireEvent.click(backButton)
-    })
-    
-    // Should be back to list view
-    await waitFor(() => {
-      expect(screen.getByText('Read more')).toBeInTheDocument()
+      const postLink = screen.getByRole('link', { name: /Test Blog Post Without Slug/i }).closest('a')
+      expect(postLink).toHaveAttribute('href', '/blog/123')
     })
   })
 
-  it('displays content when available', async () => {
+  it('displays multiple blog posts', async () => {
     const mockPosts = [
       {
         id: '1',
-        title: 'Test Blog Post',
-        excerpt: 'This is a test excerpt',
-        publishedDate: '2024-01-01',
-        content: { nodeType: 'document', content: [] }
+        title: 'First Post',
+        excerpt: 'First excerpt',
+        publishedDate: '2024-01-01'
+      },
+      {
+        id: '2',
+        title: 'Second Post',
+        excerpt: 'Second excerpt',
+        publishedDate: '2024-01-02'
       }
     ]
     
@@ -152,12 +140,9 @@ describe('Blog', () => {
     render(<Blog />)
     
     await waitFor(() => {
-      const postCard = screen.getByText('Test Blog Post').closest('article')
-      fireEvent.click(postCard)
-    })
-    
-    await waitFor(() => {
-      expect(screen.getByText('Rendered content')).toBeInTheDocument()
+      expect(screen.getByText('First Post')).toBeInTheDocument()
+      expect(screen.getByText('Second Post')).toBeInTheDocument()
+      expect(screen.getAllByText('Read more')).toHaveLength(2)
     })
   })
 
@@ -177,11 +162,7 @@ describe('Blog', () => {
     render(<Blog />)
     
     await waitFor(() => {
-      const postCard = screen.getByText('Test Blog Post').closest('article')
-      fireEvent.click(postCard)
-    })
-    
-    await waitFor(() => {
+      expect(screen.getByText('Test Blog Post')).toBeInTheDocument()
       expect(screen.getByText('This is a test excerpt')).toBeInTheDocument()
     })
   })

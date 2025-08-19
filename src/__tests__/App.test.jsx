@@ -1,8 +1,6 @@
 import { describe, it, expect, vi } from 'vitest'
-import { render, screen, fireEvent, waitFor } from '@testing-library/react'
-import { MemoryRouter, Routes, Route } from 'react-router-dom'
-import { I18nextProvider } from 'react-i18next'
-import i18n from '../i18n'
+import { render, screen, fireEvent, waitFor } from '../test/testUtils'
+import { Routes, Route } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
@@ -46,13 +44,7 @@ const TestApp = () => (
 
 describe('App Integration Tests', () => {
   it('renders home page by default', () => {
-    render(
-      <MemoryRouter initialEntries={['/']}>
-        <I18nextProvider i18n={i18n}>
-          <TestApp />
-        </I18nextProvider>
-      </MemoryRouter>
-    )
+    render(<TestApp />, { initialEntries: ['/'] })
     
     expect(screen.getByText('Introducing Wonderix')).toBeInTheDocument()
     expect(screen.getByText(/Build Educational Games with/)).toBeInTheDocument()
@@ -62,13 +54,7 @@ describe('App Integration Tests', () => {
   })
 
   it('renders blog page when navigating to /blog', async () => {
-    render(
-      <MemoryRouter initialEntries={['/blog']}>
-        <I18nextProvider i18n={i18n}>
-          <TestApp />
-        </I18nextProvider>
-      </MemoryRouter>
-    )
+    render(<TestApp />, { initialEntries: ['/blog'] })
     
     // Should show loading initially, then empty state
     expect(screen.getByText('Loading...')).toBeInTheDocument()
@@ -79,13 +65,7 @@ describe('App Integration Tests', () => {
   })
 
   it('navigates from home to blog via header link', async () => {
-    render(
-      <MemoryRouter initialEntries={['/']}>
-        <I18nextProvider i18n={i18n}>
-          <TestApp />
-        </I18nextProvider>
-      </MemoryRouter>
-    )
+    render(<TestApp />, { initialEntries: ['/'] })
     
     // Click blog link in header
     const blogLink = screen.getAllByText('Blog')[0]
@@ -102,13 +82,7 @@ describe('App Integration Tests', () => {
   })
 
   it('navigates from blog to home via logo click', async () => {
-    render(
-      <MemoryRouter initialEntries={['/blog']}>
-        <I18nextProvider i18n={i18n}>
-          <TestApp />
-        </I18nextProvider>
-      </MemoryRouter>
-    )
+    render(<TestApp />, { initialEntries: ['/blog'] })
     
     // Wait for blog to load
     await waitFor(() => {
@@ -130,26 +104,14 @@ describe('App Integration Tests', () => {
   })
 
   it('renders footer on all pages', () => {
-    render(
-      <MemoryRouter initialEntries={['/']}>
-        <I18nextProvider i18n={i18n}>
-          <TestApp />
-        </I18nextProvider>
-      </MemoryRouter>
-    )
+    render(<TestApp />, { initialEntries: ['/'] })
     
     // Footer should contain company info
     expect(screen.getByText(/Building the future of educational technology/)).toBeInTheDocument()
   })
 
   it('renders header on all pages', () => {
-    render(
-      <MemoryRouter initialEntries={['/blog']}>
-        <I18nextProvider i18n={i18n}>
-          <TestApp />
-        </I18nextProvider>
-      </MemoryRouter>
-    )
+    render(<TestApp />, { initialEntries: ['/blog'] })
     
     // Header should be present
     const headerLogo = screen.getAllByAltText('Wonderix Logo')[0]
@@ -161,13 +123,7 @@ describe('App Integration Tests', () => {
   })
 
   it('handles unknown routes gracefully', () => {
-    render(
-      <MemoryRouter initialEntries={['/unknown-route']}>
-        <I18nextProvider i18n={i18n}>
-          <TestApp />
-        </I18nextProvider>
-      </MemoryRouter>
-    )
+    render(<TestApp />, { initialEntries: ['/unknown-route'] })
     
     // Should render header and footer even for unknown routes
     const headerLogo = screen.getAllByAltText('Wonderix Logo')[0]
