@@ -13,6 +13,7 @@ import Terms from './pages/Terms'
 import Cookies from './pages/Cookies'
 import SEO from './components/SEO'
 import StructuredData from './components/StructuredData'
+import ScrollToTop from './components/ScrollToTop'
 
 // Home page component
 const HomePage = () => (
@@ -39,6 +40,7 @@ const HomePage = () => (
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-white">
         <Header />
         <Routes>

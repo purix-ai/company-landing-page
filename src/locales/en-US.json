@@ -103,10 +103,51 @@
       "contact": "Contact"
     },
     "legal": {
-      "copyright": "© {year} Purix. All rights reserved.",
+      "copyright": "© {{year}} Purix. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "cookies": "Cookie Policy"
+    }
+  },
+  "about": {
+    "backHome": "Back to Home",
+    "title": "About Purix",
+    "subtitle": "We're on a mission to democratize educational game creation through artificial intelligence",
+    "mission": {
+      "title": "Our Mission",
+      "content": "At Purix, we believe every educator should have the power to create engaging, personalized learning experiences without technical barriers. Our flagship product, Wonderix, transforms the way educational games are created by enabling teachers and parents to build interactive learning tools through simple conversation.",
+      "impact": "We're not just building technology; we're building a future where quality education is accessible, engaging, and tailored to every learner's needs."
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": {
+        "title": "Innovation",
+        "content": "Pushing the boundaries of AI to make educational content creation intuitive and powerful."
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "content": "Ensuring every educator, regardless of technical expertise, can create amazing learning experiences."
+      },
+      "impact": {
+        "title": "Impact",
+        "content": "Measuring our success by the positive change we bring to education worldwide."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "content": "Purix was founded by Bruce and Jeff, two technical founders who are both fathers and care deeply about education. Bruce has spent the past decade building cutting-edge AI applications, while Jeff is an experienced product engineer with a passion for creating intuitive, user-friendly experiences.",
+      "personal": "As parents ourselves, we understand the challenges educators and families face in keeping children engaged and learning. This personal connection drives our commitment to making educational technology that truly works.",
+      "expertise": "We're backed by a network of experienced educators who serve as consultants, ensuring that Wonderix meets the real needs of teachers and parents. Their invaluable insights help us bridge the gap between advanced AI technology and practical classroom applications."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "quote": "\"A world where every educator is empowered to create engaging, personalized learning experiences that inspire and educate the next generation.\""
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "content": "We'd love to hear from you. Whether you're an educator, investor, or just curious about what we're building.",
+      "email": "Email Us",
+      "linkedin": "Connect on LinkedIn"
     }
   }
 }

@@ -41,14 +41,14 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">{t('footer.product')}</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#features" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/#features" className="text-gray-400 hover:text-white transition-colors">
                   {t('footer.links.features')}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#how-it-works" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/#how-it-works" className="text-gray-400 hover:text-white transition-colors">
                   {t('footer.links.howItWorks')}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

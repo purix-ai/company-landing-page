@@ -22,16 +22,16 @@ const About = () => {
             className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium mb-8"
           >
             <FaArrowLeft className="mr-2" />
-            {t('about.backHome', 'Back to Home')}
+            {t('about.backHome')}
           </Link>
           
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-              {t('about.title', 'About Purix')}
+              {t('about.title')}
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('about.subtitle', 'We\'re on a mission to democratize educational game creation through artificial intelligence')}
+              {t('about.subtitle')}
             </p>
           </div>
           
@@ -41,14 +41,14 @@ const About = () => {
               <div className="flex items-center mb-6">
                 <FaRocket className="text-3xl text-primary-600 mr-4" />
                 <h2 className="text-2xl font-bold text-gray-900">
-                  {t('about.mission.title', 'Our Mission')}
+                  {t('about.mission.title')}
                 </h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                {t('about.mission.content', 'At Purix, we believe every educator should have the power to create engaging, personalized learning experiences without technical barriers. Our flagship product, Wonderix, transforms the way educational games are created by enabling teachers and parents to build interactive learning tools through simple conversation.')}
+                {t('about.mission.content')}
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                {t('about.mission.impact', 'We\'re not just building technology; we\'re building a future where quality education is accessible, engaging, and tailored to every learner\'s needs.')}
+                {t('about.mission.impact')}
               </p>
             </div>
           </div>
@@ -56,36 +56,36 @@ const About = () => {
           {/* Values Section */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              {t('about.values.title', 'Our Values')}
+              {t('about.values.title')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <FaLightbulb className="text-3xl text-primary-600 mb-4" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {t('about.values.innovation.title', 'Innovation')}
+                  {t('about.values.innovation.title')}
                 </h3>
                 <p className="text-gray-600">
-                  {t('about.values.innovation.content', 'Pushing the boundaries of AI to make educational content creation intuitive and powerful.')}
+                  {t('about.values.innovation.content')}
                 </p>
               </div>
               
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <FaUsers className="text-3xl text-primary-600 mb-4" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {t('about.values.accessibility.title', 'Accessibility')}
+                  {t('about.values.accessibility.title')}
                 </h3>
                 <p className="text-gray-600">
-                  {t('about.values.accessibility.content', 'Ensuring every educator, regardless of technical expertise, can create amazing learning experiences.')}
+                  {t('about.values.accessibility.content')}
                 </p>
               </div>
               
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <FaRocket className="text-3xl text-primary-600 mb-4" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {t('about.values.impact.title', 'Impact')}
+                  {t('about.values.impact.title')}
                 </h3>
                 <p className="text-gray-600">
-                  {t('about.values.impact.content', 'Measuring our success by the positive change we bring to education worldwide.')}
+                  {t('about.values.impact.content')}
                 </p>
               </div>
             </div>
@@ -95,13 +95,16 @@ const About = () => {
           <div className="mb-16">
             <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8 lg:p-12">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                {t('about.team.title', 'Our Team')}
+                {t('about.team.title')}
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                {t('about.team.content', 'Purix was founded by a passionate team of educators, AI researchers, and product designers who saw the untapped potential of AI in education. With decades of combined experience in educational technology, artificial intelligence, and game design, we\'re uniquely positioned to revolutionize how educational content is created.')}
+                {t('about.team.content')}
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                {t('about.team.personal')}
               </p>
               <p className="text-lg text-gray-700">
-                {t('about.team.expertise', 'Our diverse team brings together expertise from leading tech companies, educational institutions, and game studios to create a product that truly understands and serves the needs of educators.')}
+                {t('about.team.expertise')}
               </p>
             </div>
           </div>
@@ -110,13 +113,10 @@ const About = () => {
           <div className="mb-16">
             <div className="text-center bg-white rounded-2xl shadow-lg p-8 lg:p-12">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                {t('about.vision.title', 'Our Vision')}
+                {t('about.vision.title')}
               </h2>
-              <p className="text-xl text-gray-700 font-medium mb-6">
-                {t('about.vision.quote', '"A world where every educator is empowered to create engaging, personalized learning experiences that inspire and educate the next generation."')}
-              </p>
-              <p className="text-lg text-gray-600">
-                {t('about.vision.future', 'By 2030, we envision Wonderix powering millions of educational games worldwide, making quality education more accessible, engaging, and effective for learners everywhere.')}
+              <p className="text-xl text-gray-700 font-medium">
+                {t('about.vision.quote')}
               </p>
             </div>
           </div>
@@ -124,10 +124,10 @@ const About = () => {
           {/* Contact Section */}
           <div className="text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              {t('about.contact.title', 'Get in Touch')}
+              {t('about.contact.title')}
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              {t('about.contact.content', 'We\'d love to hear from you. Whether you\'re an educator, investor, or just curious about what we\'re building.')}
+              {t('about.contact.content')}
             </p>
             <div className="flex justify-center space-x-6">
               <a 
@@ -135,7 +135,7 @@ const About = () => {
                 className="inline-flex items-center px-6 py-3 bg-primary-600 text-white rounded-full font-medium hover:bg-primary-700 transition-colors"
               >
                 <FaEnvelope className="mr-2" />
-                {t('about.contact.email', 'Email Us')}
+                {t('about.contact.email')}
               </a>
               <a 
                 href="https://www.linkedin.com/company/105497266"
@@ -144,7 +144,7 @@ const About = () => {
                 className="inline-flex items-center px-6 py-3 bg-white text-primary-600 border-2 border-primary-600 rounded-full font-medium hover:bg-primary-50 transition-colors"
               >
                 <FaLinkedin className="mr-2" />
-                {t('about.contact.linkedin', 'Connect on LinkedIn')}
+                {t('about.contact.linkedin')}
               </a>
             </div>
           </div>

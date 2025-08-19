@@ -49,15 +49,28 @@ src/
 │   ├── HowItWorks.jsx   - 3-step process visualization
 │   ├── Waitlist.jsx     - Google Form integration for waitlist
 │   ├── Blog.jsx         - Blog listing page
-│   └── Footer.jsx       - Company info and links
+│   ├── BlogPost.jsx     - Individual blog post view
+│   ├── Footer.jsx       - Company info and links
+│   ├── SEO.jsx          - Dynamic meta tags with React Helmet
+│   ├── StructuredData.jsx - JSON-LD structured data
+│   └── ScrollToTop.jsx  - Auto scroll on route change
+├── pages/
+│   ├── About.jsx        - About Us page (founders: Bruce & Jeff)
+│   ├── Privacy.jsx      - Privacy Policy
+│   ├── Terms.jsx        - Terms of Service
+│   └── Cookies.jsx      - Cookie Policy
 ├── services/
 │   └── contentful.js   - Contentful CMS integration
 ├── locales/
 │   ├── en-US.json      - English translations
 │   └── zh-TW.json      - Traditional Chinese translations
-├── __tests__/          - Component tests
+├── test/
+│   ├── setup.js        - Test environment setup
+│   ├── testUtils.jsx   - Custom render with providers
+│   └── CLAUDE.md       - Test documentation
+├── __tests__/          - Integration tests
 ├── App.jsx             - Main app component with routing
-├── main.jsx            - React entry point
+├── main.jsx            - React entry point with HelmetProvider
 ├── i18n.js             - i18n configuration
 └── index.css           - Tailwind styles
 ```
@@ -70,6 +83,10 @@ src/
 - Clean, minimalistic design
 
 ## Important Configuration
+
+### Contact Information
+- **Email**: contact@purix.ai (not hello@purix.com)
+- **LinkedIn**: https://www.linkedin.com/company/105497266
 
 ### Google Form Integration
 The waitlist uses Google Forms with language-specific forms:
@@ -108,6 +125,12 @@ Uncomment these sections when demo video is ready.
 - Routes:
   - `/` - Home page with Hero, Features, HowItWorks, Waitlist sections
   - `/blog` - Blog listing page powered by Contentful CMS
+  - `/blog/:slug` - Individual blog post pages
+  - `/about` - About Us page with team info
+  - `/privacy` - Privacy Policy
+  - `/terms` - Terms of Service
+  - `/cookies` - Cookie Policy
+- Auto scroll to top on route change via ScrollToTop component
 
 ### Internationalization
 - Custom Taiwan-specific language detection (defaults to English for all non-Taiwan users)
@@ -159,8 +182,19 @@ VITE_CONTENTFUL_SPACE_ID=your_space_id
 VITE_CONTENTFUL_ACCESS_TOKEN=your_access_token
 ```
 
-### Contact Placeholder
-Replace `hello@purix.com` in Footer component with actual contact email.
+### SEO Implementation
+- React Helmet Async for dynamic meta tags
+- Structured data (JSON-LD) for Organization, Software, Article schemas
+- XML sitemap at `/public/sitemap.xml`
+- Robots.txt for crawler guidance
+- Open Graph and Twitter Card meta tags
+
+### Team Information
+- Founders: Bruce and Jeff
+- Both technical founders and fathers
+- Bruce: AI applications expert (10+ years)
+- Jeff: Experienced product engineer
+- Backed by educator consultants
 
 ### Code Style
 - Use functional React components with hooks
