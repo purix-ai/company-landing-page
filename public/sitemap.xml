@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.purix.ai/</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.purix.ai/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.purix.ai/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.purix.ai/" />
+  </url>
+  <url>
+    <loc>https://www.purix.ai/blog</loc>
+    <lastmod>2025-08-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.purix.ai/blog" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.purix.ai/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.purix.ai/blog" />
+  </url>
+</urlset>
