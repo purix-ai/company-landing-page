@@ -13,12 +13,12 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "description": "Building the Future of Educational Technology",
           "contactPoint": {
             "@type": "ContactPoint",
-            "email": "hello@purix.com",
+            "email": "contact@purix.ai",
             "contactType": "Customer Support",
             "availableLanguage": ["English", "Chinese"]
           },
           "sameAs": [
-            // Add social media URLs when available
+            "https://www.linkedin.com/company/105497266"
           ]
         }
       

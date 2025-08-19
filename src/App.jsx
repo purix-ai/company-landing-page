@@ -7,6 +7,10 @@ import Waitlist from './components/Waitlist'
 import Footer from './components/Footer'
 import Blog from './components/Blog'
 import BlogPost from './components/BlogPost'
+import About from './pages/About'
+import Privacy from './pages/Privacy'
+import Terms from './pages/Terms'
+import Cookies from './pages/Cookies'
 import SEO from './components/SEO'
 import StructuredData from './components/StructuredData'
 
@@ -41,6 +45,10 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/cookies" element={<Cookies />} />
         </Routes>
         <Footer />
       </div>

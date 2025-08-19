@@ -1,4 +1,4 @@
-import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
+import { FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
@@ -18,16 +18,20 @@ const Footer = () => {
               {t('footer.tagline')}
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <FaTwitter className="text-xl" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a 
+                href="https://www.linkedin.com/company/105497266" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="LinkedIn"
+              >
                 <FaLinkedin className="text-xl" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <FaGithub className="text-xl" />
-              </a>
-              <a href="mailto:hello@purix.com" className="text-gray-400 hover:text-white transition-colors">
+              <a 
+                href="mailto:contact@purix.ai" 
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="Email"
+              >
                 <FaEnvelope className="text-xl" />
               </a>
             </div>
@@ -46,16 +50,6 @@ const Footer = () => {
                   {t('footer.links.howItWorks')}
                 </a>
               </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  {t('footer.links.pricing')}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  {t('footer.links.roadmap')}
-                </a>
-              </li>
             </ul>
           </div>
           
@@ -63,9 +57,9 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">{t('footer.company')}</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
                   {t('footer.links.aboutUs')}
-                </a>
+                </Link>
               </li>
               <li>
                 <Link to="/blog" className="text-gray-400 hover:text-white transition-colors">
@@ -73,12 +67,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  {t('footer.links.careers')}
-                </a>
-              </li>
-              <li>
-                <a href="mailto:hello@purix.com" className="text-gray-400 hover:text-white transition-colors">
+                <a href="mailto:contact@purix.ai" className="text-gray-400 hover:text-white transition-colors">
                   {t('footer.links.contact')}
                 </a>
               </li>
@@ -92,15 +81,15 @@ const Footer = () => {
               {t('footer.legal.copyright', { year: currentYear })}
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link to="/privacy" className="text-gray-400 hover:text-white transition-colors">
                 {t('footer.legal.privacy')}
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              </Link>
+              <Link to="/terms" className="text-gray-400 hover:text-white transition-colors">
                 {t('footer.legal.terms')}
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              </Link>
+              <Link to="/cookies" className="text-gray-400 hover:text-white transition-colors">
                 {t('footer.legal.cookies')}
-              </a>
+              </Link>
             </div>
           </div>
         </div>
