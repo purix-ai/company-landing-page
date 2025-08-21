@@ -27,9 +27,16 @@ const About = () => {
           
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-              {t('about.title')}
-            </h1>
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <img 
+                src="/logo.png" 
+                alt="Purix Logo" 
+                className="h-12 md:h-16 w-auto object-contain animate-fade-in"
+              />
+              <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">
+                {t('about.title')}
+              </h1>
+            </div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               {t('about.subtitle')}
             </p>
