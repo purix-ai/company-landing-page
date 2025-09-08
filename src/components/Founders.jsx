@@ -10,14 +10,14 @@ const Founders = () => {
       name: 'Bruce Chou',
       role: t('founders.bruce.role'),
       bio: t('founders.bruce.bio'),
-      image: '/founder-photo/bruce.jpeg',
+      image: '/founder-photo/bruce.jpg',
       linkedin: 'https://www.linkedin.com/in/brucechou1983/'
     },
     {
       name: 'Jeff Chen',
       role: t('founders.jeff.role'),
       bio: t('founders.jeff.bio'),
-      image: '/founder-photo/jeff.png',
+      image: '/founder-photo/jeff.jpg',
       linkedin: 'https://www.linkedin.com/in/jeffontheground/'
     }
   ];
