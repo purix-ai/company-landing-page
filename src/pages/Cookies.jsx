@@ -5,9 +5,9 @@ import SEO from '../components/SEO'
 const Cookies = () => {
   return (
     <>
-      <SEO 
-        title="Cookie Policy | Purix"
-        description="Cookie Policy for Purix and Wonderix. Learn how we use cookies to improve your experience on our platform."
+      <SEO
+        title="Cookie Policy | Wonderix"
+        description="Cookie Policy for Wonderix. Learn how we use cookies to improve your experience on our platform."
         url="https://www.purix.ai/cookies"
       />
       <div className="min-h-screen bg-gray-50 pt-24 pb-16">

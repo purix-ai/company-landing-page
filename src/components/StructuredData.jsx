@@ -7,7 +7,7 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
         return {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Purix",
+          "name": "Wonderix",
           "url": "https://www.purix.ai",
           "logo": "https://www.purix.ai/logo_1024x1024.png",
           "description": "Building the Future of Educational Technology",
@@ -38,7 +38,7 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "description": "AI-powered no-code platform for teachers and parents to build educational games through conversation",
           "creator": {
             "@type": "Organization",
-            "name": "Purix"
+            "name": "Wonderix"
           },
           "datePublished": "2025-01-01",
           "featureList": [
@@ -55,7 +55,7 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
         return {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Purix",
+          "name": "Wonderix",
           "url": "https://www.purix.ai",
           "potentialAction": {
             "@type": "SearchAction",
@@ -78,11 +78,11 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "dateModified": data.modifiedDate || data.publishedDate || new Date().toISOString(),
           "author": {
             "@type": "Organization",
-            "name": "Purix Team"
+            "name": "Wonderix Team"
           },
           "publisher": {
             "@type": "Organization",
-            "name": "Purix",
+            "name": "Wonderix",
             "logo": {
               "@type": "ImageObject",
               "url": "https://www.purix.ai/logo_1024x1024.png"

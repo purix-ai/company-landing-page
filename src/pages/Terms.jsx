@@ -5,9 +5,9 @@ import SEO from '../components/SEO'
 const Terms = () => {
   return (
     <>
-      <SEO 
-        title="Terms of Service | Purix"
-        description="Terms of Service for Purix and Wonderix. Read our terms and conditions for using our educational game creation platform."
+      <SEO
+        title="Terms of Service | Wonderix"
+        description="Terms of Service for Wonderix. Read our terms and conditions for using our educational game creation platform."
         url="https://www.purix.ai/terms"
       />
       <div className="min-h-screen bg-gray-50 pt-24 pb-16">
@@ -28,7 +28,7 @@ const Terms = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Acceptance of Terms</h2>
                 <p className="text-gray-700 mb-4">
-                  By accessing and using Purix services, including Wonderix, you agree to be bound by these Terms of Service and all applicable laws and regulations.
+                  By accessing and using Wonderix services, you agree to be bound by these Terms of Service and all applicable laws and regulations.
                 </p>
               </section>
               
@@ -56,7 +56,7 @@ const Terms = () => {
                   Content you create using our services remains your property. You grant us a license to use, display, and distribute your content solely for the purpose of providing our services.
                 </p>
                 <p className="text-gray-700 mb-4">
-                  The Purix and Wonderix platforms, including all software, design, and content, are protected by intellectual property laws and remain our property.
+                  The Wonderix platform, including all software, design, and content, are protected by intellectual property laws and remain our property.
                 </p>
               </section>
               
@@ -75,7 +75,7 @@ const Terms = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. Limitation of Liability</h2>
                 <p className="text-gray-700 mb-4">
-                  Purix provides services on an "as is" basis. We are not liable for any indirect, incidental, special, or consequential damages arising from your use of our services.
+                  Wonderix provides services on an "as is" basis. We are not liable for any indirect, incidental, special, or consequential damages arising from your use of our services.
                 </p>
               </section>
               

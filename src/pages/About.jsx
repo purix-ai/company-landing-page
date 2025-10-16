@@ -8,10 +8,10 @@ const About = () => {
   
   return (
     <>
-      <SEO 
-        title="About Us | Purix - Our Mission to Transform Education"
-        description="Learn about Purix's mission to democratize educational game creation through AI. Meet our team and discover how we're empowering educators worldwide."
-        keywords="about Purix, educational technology company, AI education mission, Wonderix team, edtech innovation"
+      <SEO
+        title="About Us | Wonderix - Our Mission to Transform Education"
+        description="Learn about Wonderix's mission to democratize educational game creation through AI. Meet our team and discover how we're empowering educators worldwide."
+        keywords="about Wonderix, educational technology company, AI education mission, Wonderix team, edtech innovation"
         url="https://www.purix.ai/about"
       />
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-24 pb-16">
@@ -28,9 +28,9 @@ const About = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-4 mb-6">
-              <img 
-                src="/logo.png" 
-                alt="Purix Logo" 
+              <img
+                src="/logo.png"
+                alt="Wonderix Logo"
                 className="h-12 md:h-16 w-auto object-contain animate-fade-in"
               />
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900">

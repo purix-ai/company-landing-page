@@ -103,7 +103,7 @@
       "contact": "Contact"
     },
     "legal": {
-      "copyright": "© {{year}} Purix. All rights reserved.",
+      "copyright": "© {{year}} Wonderix. All rights reserved.",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "cookies": "Cookie Policy"
@@ -111,11 +111,11 @@
   },
   "about": {
     "backHome": "Back to Home",
-    "title": "About Purix",
+    "title": "About Wonderix",
     "subtitle": "We're on a mission to democratize educational game creation through artificial intelligence",
     "mission": {
       "title": "Our Mission",
-      "content": "At Purix, we believe every educator should have the power to create engaging, personalized learning experiences without technical barriers. Our flagship product, Wonderix, transforms the way educational games are created by enabling teachers and parents to build interactive learning tools through simple conversation.",
+      "content": "At Wonderix, we believe every educator should have the power to create engaging, personalized learning experiences without technical barriers. Our flagship product, Wonderix, transforms the way educational games are created by enabling teachers and parents to build interactive learning tools through simple conversation.",
       "impact": "We're not just building technology; we're building a future where quality education is accessible, engaging, and tailored to every learner's needs."
     },
     "values": {
@@ -135,7 +135,7 @@
     },
     "team": {
       "title": "Our Team",
-      "content": "Purix was founded by Bruce and Jeff, two technical founders who are both fathers and care deeply about education. Bruce has spent the past decade building cutting-edge AI applications, while Jeff is an experienced product engineer with a passion for creating intuitive, user-friendly experiences.",
+      "content": "Wonderix was founded by Bruce and Jeff, two technical founders who are both fathers and care deeply about education. Bruce has spent the past decade building cutting-edge AI applications, while Jeff is an experienced product engineer with a passion for creating intuitive, user-friendly experiences.",
       "personal": "As parents ourselves, we understand the challenges educators and families face in keeping children engaged and learning. This personal connection drives our commitment to making educational technology that truly works.",
       "expertise": "We're backed by a network of experienced educators who serve as consultants, ensuring that Wonderix meets the real needs of teachers and parents. Their invaluable insights help us bridge the gap between advanced AI technology and practical classroom applications."
     },
@@ -163,7 +163,7 @@
     },
     "story": {
       "title": "Our Story",
-      "content": "Bruce and Jeff met at their previous company where they worked together and discussed AI products daily. Through these conversations, they discovered a shared vision for building innovative products that could make a real difference in people's lives. Both being fathers, they understood the challenges of keeping children engaged while learning. This common ground, combined with their complementary skills in AI and user experience, led them to co-found Purix and create Wonderix."
+      "content": "Bruce and Jeff met at their previous company where they worked together and discussed AI products daily. Through these conversations, they discovered a shared vision for building innovative products that could make a real difference in people's lives. Both being fathers, they understood the challenges of keeping children engaged while learning. This common ground, combined with their complementary skills in AI and user experience, led them to co-found Wonderix."
     }
   }
 }

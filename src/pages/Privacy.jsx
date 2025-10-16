@@ -5,9 +5,9 @@ import SEO from '../components/SEO'
 const Privacy = () => {
   return (
     <>
-      <SEO 
-        title="Privacy Policy | Purix"
-        description="Privacy Policy for Purix and Wonderix. Learn how we collect, use, and protect your personal information."
+      <SEO
+        title="Privacy Policy | Wonderix"
+        description="Privacy Policy for Wonderix. Learn how we collect, use, and protect your personal information."
         url="https://www.purix.ai/privacy"
       />
       <div className="min-h-screen bg-gray-50 pt-24 pb-16">
@@ -28,7 +28,7 @@ const Privacy = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
                 <p className="text-gray-700 mb-4">
-                  Purix ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and services, including Wonderix.
+                  Wonderix ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and services.
                 </p>
               </section>
               

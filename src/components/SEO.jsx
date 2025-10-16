@@ -16,9 +16,9 @@ const SEO = ({
   const siteUrl = 'https://www.purix.ai'
   const defaultImage = `${siteUrl}/logo_1024x1024.png`
   
-  const seoTitle = title || 'Purix - Building the Future of Educational Technology'
+  const seoTitle = title || 'Wonderix - Building the Future of Educational Technology'
   const seoDescription = description || 'Wonderix - AI-powered no-code platform for teachers and parents to build educational games through conversation. Create engaging learning experiences in just 15 minutes.'
-  const seoKeywords = keywords || 'educational games, AI education, no-code platform, teacher tools, parent resources, game-based learning, Wonderix, Purix, edtech, educational technology'
+  const seoKeywords = keywords || 'educational games, AI education, no-code platform, teacher tools, parent resources, game-based learning, Wonderix, edtech, educational technology'
   const seoImage = image || defaultImage
   const seoUrl = url || siteUrl
   const lang = i18n.language
@@ -37,7 +37,7 @@ const SEO = ({
       <meta property="og:type" content={type} />
       <meta property="og:url" content={seoUrl} />
       <meta property="og:image" content={seoImage} />
-      <meta property="og:site_name" content="Purix" />
+      <meta property="og:site_name" content="Wonderix" />
       <meta property="og:locale" content={lang === 'zh-TW' ? 'zh_TW' : 'en_US'} />
       
       {/* Twitter Card tags */}
@@ -49,7 +49,7 @@ const SEO = ({
       {/* Article specific tags for blog posts */}
       {type === 'article' && (
         <>
-          <meta property="article:author" content={author || 'Purix Team'} />
+          <meta property="article:author" content={author || 'Wonderix Team'} />
           {publishedDate && <meta property="article:published_time" content={publishedDate} />}
           {modifiedDate && <meta property="article:modified_time" content={modifiedDate} />}
         </>
