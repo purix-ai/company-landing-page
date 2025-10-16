@@ -11,16 +11,7 @@ const Hero = () => {
     <section className="pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 mb-8">
-            <div className="flex-shrink-0">
-              <img 
-                src="/logo_1024x1024.png" 
-                alt="Wonderix Logo" 
-                className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain animate-fade-in"
-              />
-            </div>
-            
-            <div className="text-center lg:text-left flex-1">
+          <div className="text-center">
               <div className="mb-6 inline-flex items-center px-3 py-1 rounded-full bg-purple-100 text-primary-600 text-sm font-medium">
                 <FaRocket className="mr-2" />
                 {t('hero.introducing')}
@@ -33,11 +24,11 @@ const Hero = () => {
                 </span>
               </h1>
           
-              <p className="text-xl text-gray-600 mb-8 max-w-2xl animate-slide-up">
+              <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto animate-slide-up">
                 {t('hero.description')}
               </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-slide-up">
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
                 <button
                   onClick={scrollToWaitlist}
                   className="px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
@@ -52,7 +43,6 @@ const Hero = () => {
                 */}
               </div>
             </div>
-          </div>
 
           <div className="mt-12 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">

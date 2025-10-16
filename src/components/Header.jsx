@@ -7,6 +7,20 @@ const Header = () => {
   const navigate = useNavigate()
   const location = useLocation()
   
+  const handleLogoClick = (e) => {
+    e.preventDefault()
+    if (location.pathname !== '/') {
+      navigate('/')
+      // Wait for navigation to complete, then scroll to top
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }, 100)
+    } else {
+      // We're already on home page, just scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
   const scrollToSection = (sectionId) => {
     // If we're not on the home page, navigate to home first
     if (location.pathname !== '/') {
@@ -25,13 +39,13 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <img 
-              src="/logo.png" 
-              alt="Wonderix Logo" 
+          <Link to="/" onClick={handleLogoClick} className="flex items-center cursor-pointer">
+            <img
+              src="/logo_1024x1024.png"
+              alt="Wonderix Logo"
               className="h-10 md:h-12 w-auto"
             />
-          </div>
+          </Link>
           
           <nav className="hidden md:flex items-center space-x-8" aria-label="Desktop navigation">
             <button 

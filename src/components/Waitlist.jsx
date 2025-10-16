@@ -71,13 +71,6 @@ const Waitlist = () => {
                   <p className="mt-4 text-sm text-gray-600">
                     {t('waitlist.noSpam')}
                   </p>
-
-                  <div className="mt-6 flex items-center justify-center">
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-gray-900">Q3 2025</p>
-                      <p className="text-sm text-gray-600">{t('waitlist.betaRelease')}</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
