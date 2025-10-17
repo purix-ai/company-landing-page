@@ -12,13 +12,6 @@ const Founders = () => {
       bio: t('founders.bruce.bio'),
       image: '/founder-photo/bruce.jpg',
       linkedin: 'https://www.linkedin.com/in/brucechou1983/'
-    },
-    {
-      name: 'Jeff Chen',
-      role: t('founders.jeff.role'),
-      bio: t('founders.jeff.bio'),
-      image: '/founder-photo/jeff.jpg',
-      linkedin: 'https://www.linkedin.com/in/jeffontheground/'
     }
   ];
 
@@ -34,11 +27,11 @@ const Founders = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="flex justify-center max-w-5xl mx-auto">
           {founders.map((founder, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105"
+              className="bg-white rounded-2xl shadow-xl p-8 transform transition-all duration-300 hover:scale-105 max-w-md w-full"
             >
               <div className="flex flex-col items-center text-center">
                 <div className="relative mb-6">
@@ -72,16 +65,6 @@ const Founders = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <div className="bg-white rounded-xl p-8 max-w-4xl mx-auto shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              {t('founders.story.title')}
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              {t('founders.story.content')}
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );

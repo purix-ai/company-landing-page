@@ -55,7 +55,7 @@ src/
 │   ├── StructuredData.jsx - JSON-LD structured data
 │   └── ScrollToTop.jsx  - Auto scroll on route change
 ├── pages/
-│   ├── About.jsx        - About Us page (founders: Bruce & Jeff)
+│   ├── About.jsx        - About Us page (founder: Bruce)
 │   ├── Privacy.jsx      - Privacy Policy
 │   ├── Terms.jsx        - Terms of Service
 │   └── Cookies.jsx      - Cookie Policy
@@ -190,10 +190,9 @@ VITE_CONTENTFUL_ACCESS_TOKEN=your_access_token
 - Open Graph and Twitter Card meta tags
 
 ### Team Information
-- Founders: Bruce and Jeff
-- Both technical founders and fathers
-- Bruce: AI applications expert (10+ years)
-- Jeff: Experienced product engineer
+- Founder: Bruce Chou
+- Technical founder and father
+- AI applications expert (10+ years)
 - Backed by educator consultants
 
 ### Code Style

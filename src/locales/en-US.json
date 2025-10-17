@@ -135,9 +135,9 @@
     },
     "team": {
       "title": "Our Team",
-      "content": "Wonderix was founded by Bruce and Jeff, two technical founders who are both fathers and care deeply about education. Bruce has spent the past decade building cutting-edge AI applications, while Jeff is an experienced product engineer with a passion for creating intuitive, user-friendly experiences.",
-      "personal": "As parents ourselves, we understand the challenges educators and families face in keeping children engaged and learning. This personal connection drives our commitment to making educational technology that truly works.",
-      "expertise": "We're backed by a network of experienced educators who serve as consultants, ensuring that Wonderix meets the real needs of teachers and parents. Their invaluable insights help us bridge the gap between advanced AI technology and practical classroom applications."
+      "content": "Wonderix was founded by Bruce, a technical founder and father who cares deeply about education. Bruce has spent the past decade building cutting-edge AI applications across various industries.",
+      "personal": "As a parent, Bruce understands the challenges educators and families face in keeping children engaged and learning. This personal connection drives his commitment to making educational technology that truly works.",
+      "expertise": "Wonderix is backed by a network of experienced educators who serve as consultants, ensuring that the platform meets the real needs of teachers and parents. Their invaluable insights help bridge the gap between advanced AI technology and practical classroom applications."
     },
     "vision": {
       "title": "Our Vision",
@@ -151,19 +151,11 @@
     }
   },
   "founders": {
-    "title": "Meet the Founders",
-    "subtitle": "Two fathers on a mission to make learning magical through AI-powered games",
+    "title": "Meet the Founder",
+    "subtitle": "A father on a mission to make learning magical through AI-powered games",
     "bruce": {
-      "role": "Co-founder & CEO",
+      "role": "Founder & CEO",
       "bio": "Bruce brings over a decade of experience in machine learning and AI product development, having led innovative products across semiconductor, digital reading platforms, healthcare information systems, and live streaming applications. As a father of two, Bruce understands firsthand how children thrive when learning is fun and engaging. This insight drives his mission to revolutionize educational gaming through AI-powered tools."
-    },
-    "jeff": {
-      "role": "Co-founder & CPO",
-      "bio": "Jeff brings 7+ years of experience from software startups, specializing in frontend development and creating exceptional user experiences that make complex technology accessible. His expertise in intuitive design ensures that anyone can use Wonderix effortlessly. As a father of a 6-year-old, he experiences daily how learning through play sparks genuine happiness and growth in children. This insight fuels his passion for building Wonderix's delightfully simple interface."
-    },
-    "story": {
-      "title": "Our Story",
-      "content": "Bruce and Jeff met at their previous company where they worked together and discussed AI products daily. Through these conversations, they discovered a shared vision for building innovative products that could make a real difference in people's lives. Both being fathers, they understood the challenges of keeping children engaged while learning. This common ground, combined with their complementary skills in AI and user experience, led them to co-found Wonderix."
     }
   }
 }
