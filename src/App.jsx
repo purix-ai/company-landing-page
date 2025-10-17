@@ -21,7 +21,7 @@ const HomePage = () => (
   <>
     <SEO
       title="Wonderix - AI-Powered Educational Game Creation Platform"
-      description="Create engaging educational games in 15 minutes with Wonderix. No coding required. AI-powered platform for teachers and parents to build personalized learning experiences through conversation."
+      description="Create engaging educational games with Wonderix. No coding required. AI-powered platform for teachers and parents to build personalized learning experiences through conversation."
       keywords="educational games, AI education, no-code game builder, teacher tools, parent resources, game-based learning, Wonderix, edtech, educational technology, AI game creation"
       url="https://www.purix.ai"
     />

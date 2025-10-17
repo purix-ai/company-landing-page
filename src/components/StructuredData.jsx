@@ -44,7 +44,6 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "featureList": [
             "No coding required",
             "AI-powered game creation",
-            "15-minute game creation",
             "Educational content",
             "Personalized learning",
             "Multiple game types"
@@ -121,14 +120,6 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Wonderix is an AI-powered no-code platform that enables teachers and parents to create educational games through conversation. No coding skills required."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How long does it take to create a game?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "You can create your first educational game in just 15 minutes using our AI-powered platform."
               }
             },
             {

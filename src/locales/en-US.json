@@ -65,9 +65,7 @@
         "title": "Share & Play",
         "description": "Customize if needed, then share your game with students. Track their progress and adjust difficulty as they learn."
       }
-    },
-    "averageTime": "Average time to first game:",
-    "timeValue": "Under 15 minutes"
+    }
   },
   "waitlist": {
     "badge": "Be Among the First",

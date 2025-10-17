@@ -78,17 +78,6 @@ const HowItWorks = () => {
             ))}
           </div>
         </div>
-
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center justify-center p-6 bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl">
-            <div className="text-left">
-              <p className="text-sm text-gray-600 mb-1">{t('howItWorks.averageTime')}</p>
-              <p className="text-3xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
-                {t('howItWorks.timeValue')}
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

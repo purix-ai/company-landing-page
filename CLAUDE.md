@@ -115,7 +115,6 @@ Uncomment these sections when demo video is ready.
 - Target audience: Teachers AND parents (not just educators)
 - No curriculum alignment focus
 - Launch date: Q4 2025
-- Time to first game: 15 minutes
 - Waitlist benefits: Early access, lifetime discount, shape the product
 
 ## Architecture

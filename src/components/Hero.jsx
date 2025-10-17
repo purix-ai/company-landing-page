@@ -44,14 +44,10 @@ const Hero = () => {
               </div>
             </div>
 
-          <div className="mt-12 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+          <div className="mt-12 grid grid-cols-2 gap-8 max-w-lg mx-auto">
             <div className="text-center">
               <div className="text-3xl font-bold text-gray-900">0</div>
               <div className="text-sm text-gray-600">{t('hero.stats.noCoding')}</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-gray-900">15min</div>
-              <div className="text-sm text-gray-600">{t('hero.stats.timeToGame')}</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-gray-900">100%</div>

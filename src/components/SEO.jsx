@@ -17,7 +17,7 @@ const SEO = ({
   const defaultImage = `${siteUrl}/logo_1024x1024.png`
   
   const seoTitle = title || 'Wonderix - Building the Future of Educational Technology'
-  const seoDescription = description || 'Wonderix - AI-powered no-code platform for teachers and parents to build educational games through conversation. Create engaging learning experiences in just 15 minutes.'
+  const seoDescription = description || 'Wonderix - AI-powered no-code platform for teachers and parents to build educational games through conversation. Create engaging learning experiences.'
   const seoKeywords = keywords || 'educational games, AI education, no-code platform, teacher tools, parent resources, game-based learning, Wonderix, edtech, educational technology'
   const seoImage = image || defaultImage
   const seoUrl = url || siteUrl
