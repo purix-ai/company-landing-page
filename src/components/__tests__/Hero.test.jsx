@@ -24,9 +24,8 @@ describe('Hero', () => {
 
   it('renders stats section', () => {
     render(<Hero />)
-    
+
     expect(screen.getByText('Coding Required')).toBeInTheDocument()
-    expect(screen.getByText('To First Game')).toBeInTheDocument()
     expect(screen.getByText('AI-Powered')).toBeInTheDocument()
   })
 

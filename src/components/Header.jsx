@@ -1,18 +1,29 @@
 import { useTranslation } from 'react-i18next'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
+import { useEffect, useRef } from 'react'
 import LanguageSwitcher from './LanguageSwitcher'
 
 const Header = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const location = useLocation()
-  
+  const timeoutRef = useRef(null)
+
+  // Clean up timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
+    }
+  }, [])
+
   const handleLogoClick = (e) => {
     e.preventDefault()
     if (location.pathname !== '/') {
       navigate('/')
       // Wait for navigation to complete, then scroll to top
-      setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }, 100)
     } else {
@@ -26,12 +37,18 @@ const Header = () => {
     if (location.pathname !== '/') {
       navigate('/')
       // Wait for navigation to complete, then scroll
-      setTimeout(() => {
-        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+      timeoutRef.current = setTimeout(() => {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
       }, 100)
     } else {
       // We're already on home page, just scroll
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
     }
   }
 
