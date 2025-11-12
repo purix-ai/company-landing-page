@@ -40,8 +40,8 @@
     }
   },
   "howItWorks": {
-    "title": "How We",
-    "titleHighlight": "Achieve Results",
+    "title": "Achieve Results",
+    "titleHighlight": "How We",
     "subtitle": "Backed by rigorous educational science—not just fun, but effective.",
     "steps": {
       "describe": {
@@ -73,7 +73,7 @@
       },
       "shapeProduct": {
         "title": "Co-Create Together:",
-        "description": "2-3 weeks post-launch, join a 30-minute online discussion to directly shape Wonderix's future with your feedback"
+        "description": "Collaborate with us to customize learning materials for your child before the program starts, commit to minimum usage during the one-month program, and share your feedback after completion"
       }
     },
     "joinButton": "Apply for Founding Family Program",

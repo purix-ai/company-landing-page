@@ -33,10 +33,10 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            {t('howItWorks.titleHighlight')}{' '}
             <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
-              {t('howItWorks.titleHighlight')}
-            </span>{' '}
-            {t('howItWorks.title')}
+              {t('howItWorks.title')}
+            </span>
           </h2>
           <p className="text-lg text-gray-600">
             {t('howItWorks.subtitle')}
