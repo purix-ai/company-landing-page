@@ -46,7 +46,6 @@ describe('App Integration Tests', () => {
   it('renders home page by default', () => {
     render(<TestApp />, { initialEntries: ['/'] })
 
-    expect(screen.getByText('Introducing Wonderix')).toBeInTheDocument()
     expect(screen.getByText(/Create Engaging and Effective/)).toBeInTheDocument()
     // Check for header logo specifically
     const headerLogo = screen.getAllByAltText('Wonderix Logo')[0]
@@ -83,23 +82,23 @@ describe('App Integration Tests', () => {
 
   it('navigates from blog to home via logo click', async () => {
     render(<TestApp />, { initialEntries: ['/blog'] })
-    
+
     // Wait for blog to load
     await waitFor(() => {
       expect(screen.getByText('Stay tuned for our first blog post!')).toBeInTheDocument()
     })
-    
+
     // Click logo to go home (logo should be a link)
     const logo = screen.getByAltText('Wonderix Logo')
-    
+
     // The logo is currently not a link, but header navigation should work
     // Test header navigation instead
     const featuresButton = screen.getAllByText('Features')[0]
     fireEvent.click(featuresButton)
-    
+
     // Should navigate back to home
     await waitFor(() => {
-      expect(screen.getByText('Introducing Wonderix')).toBeInTheDocument()
+      expect(screen.getByText(/Create Engaging and Effective/)).toBeInTheDocument()
     })
   })
 

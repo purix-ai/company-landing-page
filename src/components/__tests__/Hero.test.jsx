@@ -6,7 +6,6 @@ describe('Hero', () => {
   it('renders hero content', () => {
     render(<Hero />)
 
-    expect(screen.getByText('Introducing Wonderix')).toBeInTheDocument()
     expect(screen.getByText(/Create Engaging and Effective/)).toBeInTheDocument()
     expect(screen.getByText('Educational Games')).toBeInTheDocument()
     expect(screen.getByText(/Stop forcing kids to memorize/)).toBeInTheDocument()
