@@ -108,9 +108,10 @@ The URL is configured in `src/components/Waitlist.jsx` line 8.
 Uncomment these sections when demo video is ready.
 
 ## Color Scheme
-- Primary: Purple (#6B46C1)
-- Secondary: Blue (#2563EB)
-- Configured in `tailwind.config.js`
+- Primary: Blue (#3c8afc) - Main brand color for CTAs and headlines
+- Secondary: Orange (#f48d25) - Accent color for gradients and highlights
+- Accent: Teal (#4bd6b2) - Supporting color for variety
+- Configured in `tailwind.config.js` with multiple shades (50, 100, 500, 600, 700)
 
 ## Content Updates
 - **Primary audience**: Parents (focus on children's learning pain points)

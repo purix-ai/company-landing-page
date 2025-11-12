@@ -24,7 +24,7 @@ const HowItWorks = () => {
       icon: <FaShare className="text-3xl" />,
       titleKey: 'howItWorks.steps.sharePlay.title',
       descriptionKey: 'howItWorks.steps.sharePlay.description',
-      color: 'from-green-500 to-green-600'
+      color: 'from-accent-500 to-accent-600'
     }
   ]
 
@@ -44,7 +44,7 @@ const HowItWorks = () => {
         </div>
 
         <div className="relative">
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-200 via-secondary-200 to-green-200 transform -translate-y-1/2"></div>
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 opacity-20 transform -translate-y-1/2"></div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
             {steps.map((step, index) => (

@@ -10,21 +10,21 @@ const Features = () => {
       titleKey: 'features.items.intrinsicIntegration.title',
       subtitleKey: 'features.items.intrinsicIntegration.subtitle',
       descriptionKey: 'features.items.intrinsicIntegration.description',
-      color: 'from-purple-500 to-purple-600'
+      color: 'from-primary-500 to-primary-600'
     },
     {
       icon: <FaRobot className="text-4xl" />,
       titleKey: 'features.items.aiTutoring.title',
       subtitleKey: 'features.items.aiTutoring.subtitle',
       descriptionKey: 'features.items.aiTutoring.description',
-      color: 'from-blue-500 to-blue-600'
+      color: 'from-secondary-500 to-secondary-600'
     },
     {
       icon: <FaChartLine className="text-4xl" />,
       titleKey: 'features.items.parentDashboard.title',
       subtitleKey: 'features.items.parentDashboard.subtitle',
       descriptionKey: 'features.items.parentDashboard.description',
-      color: 'from-green-500 to-green-600'
+      color: 'from-accent-500 to-accent-600'
     }
   ]
 
