@@ -45,9 +45,9 @@ const TestApp = () => (
 describe('App Integration Tests', () => {
   it('renders home page by default', () => {
     render(<TestApp />, { initialEntries: ['/'] })
-    
+
     expect(screen.getByText('Introducing Wonderix')).toBeInTheDocument()
-    expect(screen.getByText(/Build Educational Games with/)).toBeInTheDocument()
+    expect(screen.getByText(/Create Engaging and Effective/)).toBeInTheDocument()
     // Check for header logo specifically
     const headerLogo = screen.getAllByAltText('Wonderix Logo')[0]
     expect(headerLogo).toBeInTheDocument()
