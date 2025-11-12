@@ -12,7 +12,7 @@ const About = () => {
         title="About Us | Wonderix - Our Mission to Transform Education"
         description="Learn about Wonderix's mission to democratize educational game creation through AI. Meet our team and discover how we're empowering educators worldwide."
         keywords="about Wonderix, educational technology company, AI education mission, Wonderix team, edtech innovation"
-        url="https://www.purix.ai/about"
+        url="https://www.wonderix.app/about"
       />
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-24 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -136,19 +136,12 @@ const About = () => {
             <p className="text-lg text-gray-600 mb-8">
               {t('about.contact.content')}
             </p>
-            <div className="flex justify-center space-x-6">
-              <a 
-                href="mailto:contact@purix.ai"
-                className="inline-flex items-center px-6 py-3 bg-primary-600 text-white rounded-full font-medium hover:bg-primary-700 transition-colors"
-              >
-                <FaEnvelope className="mr-2" />
-                {t('about.contact.email')}
-              </a>
-              <a 
+            <div className="flex justify-center">
+              <a
                 href="https://www.linkedin.com/company/105497266"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-white text-primary-600 border-2 border-primary-600 rounded-full font-medium hover:bg-primary-50 transition-colors"
+                className="inline-flex items-center px-6 py-3 bg-primary-600 text-white rounded-full font-medium hover:bg-primary-700 transition-colors"
               >
                 <FaLinkedin className="mr-2" />
                 {t('about.contact.linkedin')}

@@ -8,7 +8,7 @@ const Privacy = () => {
       <SEO
         title="Privacy Policy | Wonderix"
         description="Privacy Policy for Wonderix. Learn how we collect, use, and protect your personal information."
-        url="https://www.purix.ai/privacy"
+        url="https://www.wonderix.app/privacy"
       />
       <div className="min-h-screen bg-gray-50 pt-24 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
@@ -77,10 +77,7 @@ const Privacy = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. Contact Us</h2>
                 <p className="text-gray-700">
-                  If you have questions about this Privacy Policy, please contact us at:
-                </p>
-                <p className="text-gray-700 mt-4">
-                  Email: <a href="mailto:contact@purix.ai" className="text-primary-600 hover:text-primary-700">contact@purix.ai</a>
+                  If you have questions about this Privacy Policy, please contact us through our website.
                 </p>
               </section>
             </div>

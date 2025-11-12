@@ -18,21 +18,14 @@ const Footer = () => {
               {t('footer.tagline')}
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://www.linkedin.com/company/105497266" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/company/105497266"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin className="text-xl" />
-              </a>
-              <a 
-                href="mailto:contact@purix.ai" 
-                className="text-gray-400 hover:text-white transition-colors"
-                aria-label="Email"
-              >
-                <FaEnvelope className="text-xl" />
               </a>
             </div>
           </div>
@@ -65,11 +58,6 @@ const Footer = () => {
                 <Link to="/blog" className="text-gray-400 hover:text-white transition-colors">
                   {t('footer.links.blog')}
                 </Link>
-              </li>
-              <li>
-                <a href="mailto:contact@purix.ai" className="text-gray-400 hover:text-white transition-colors">
-                  {t('footer.links.contact')}
-                </a>
               </li>
             </ul>
           </div>

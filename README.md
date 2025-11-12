@@ -1,6 +1,6 @@
-# Purix Landing Page
+# Wonderix Landing Page
 
-A modern, minimalistic landing page for Purix featuring Wonderix - an AI-powered no-code platform for teachers and parents to build educational games.
+A modern, minimalistic landing page for Wonderix - an AI-powered no-code platform for teachers and parents to build educational games.
 
 ## 🚀 Quick Start
 
@@ -87,7 +87,3 @@ This site is ready to deploy on:
 - **Netlify**: Drag and drop the `dist` folder
 - **GitHub Pages**: Use GitHub Actions
 - **Any static hosting**: Upload the `dist` folder
-
-## 📧 Contact
-
-Replace the placeholder email `hello@purix.com` with your actual contact email in the Footer component.

@@ -12,11 +12,6 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
-              <div className="mb-6 inline-flex items-center px-3 py-1 rounded-full bg-purple-100 text-primary-600 text-sm font-medium">
-                <FaRocket className="mr-2" />
-                {t('hero.introducing')}
-              </div>
-              
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 animate-fade-in">
                 {t('hero.headline')}{' '}
                 <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">

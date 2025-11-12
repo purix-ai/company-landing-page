@@ -1,6 +1,6 @@
-# Test Documentation for Purix Landing Page
+# Test Documentation for Wonderix Landing Page
 
-This document provides guidance for writing and maintaining tests in the Purix landing page project.
+This document provides guidance for writing and maintaining tests in the Wonderix landing page project.
 
 ## Test Infrastructure
 

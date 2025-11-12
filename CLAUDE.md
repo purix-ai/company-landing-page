@@ -3,7 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
-A modern, minimalistic landing page for Purix featuring Wonderix - an AI-powered no-code platform for teachers and parents to build educational games through conversation.
+A modern, minimalistic landing page for Wonderix - an AI-powered no-code platform for teachers and parents to build educational games through conversation.
 
 ## Tech Stack
 - **React 18.3** with functional components and hooks
@@ -87,7 +87,6 @@ src/
 ## Important Configuration
 
 ### Contact Information
-- **Email**: contact@purix.ai (not hello@purix.com)
 - **LinkedIn**: https://www.linkedin.com/company/105497266
 
 ### Google Form Integration
@@ -164,7 +163,7 @@ Uncomment these sections when demo video is ready.
 This project is configured to deploy automatically to GitHub Pages using GitHub Actions:
 
 1. **Automatic Deployment**: Every push to `main` branch triggers tests, build and deploy
-2. **Custom Domain**: www.purix.ai (configured via CNAME file)
+2. **Custom Domain**: www.wonderix.app (configured via CNAME file)
 3. **Base Path**: Set to `/` in `vite.config.js` for custom domain
 
 **GitHub Actions Workflow** (`.github/workflows/deploy.yml`):

@@ -8,7 +8,7 @@ const Terms = () => {
       <SEO
         title="Terms of Service | Wonderix"
         description="Terms of Service for Wonderix. Read our terms and conditions for using our educational game creation platform."
-        url="https://www.purix.ai/terms"
+        url="https://www.wonderix.app/terms"
       />
       <div className="min-h-screen bg-gray-50 pt-24 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
@@ -89,10 +89,7 @@ const Terms = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. Contact Information</h2>
                 <p className="text-gray-700">
-                  For questions about these Terms of Service, please contact us at:
-                </p>
-                <p className="text-gray-700 mt-4">
-                  Email: <a href="mailto:contact@purix.ai" className="text-primary-600 hover:text-primary-700">contact@purix.ai</a>
+                  For questions about these Terms of Service, please contact us through our website.
                 </p>
               </section>
             </div>

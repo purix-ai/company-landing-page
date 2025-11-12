@@ -11,12 +11,6 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "url": "https://www.wonderix.app",
           "logo": "https://www.wonderix.app/logo_1024x1024.png",
           "description": "Building the Future of Educational Technology",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "contact@purix.ai",
-            "contactType": "Customer Support",
-            "availableLanguage": ["English", "Chinese"]
-          },
           "sameAs": [
             "https://www.linkedin.com/company/105497266"
           ]
