@@ -8,8 +8,8 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "Wonderix",
-          "url": "https://www.purix.ai",
-          "logo": "https://www.purix.ai/logo_1024x1024.png",
+          "url": "https://www.wonderix.app",
+          "logo": "https://www.wonderix.app/logo_1024x1024.png",
           "description": "Building the Future of Educational Technology",
           "contactPoint": {
             "@type": "ContactPoint",
@@ -55,12 +55,12 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "Wonderix",
-          "url": "https://www.purix.ai",
+          "url": "https://www.wonderix.app",
           "potentialAction": {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://www.purix.ai/blog?search={search_term_string}"
+              "urlTemplate": "https://www.wonderix.app/blog?search={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
@@ -72,7 +72,7 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "@type": "Article",
           "headline": data.title || "Blog Post",
           "description": data.description || "",
-          "image": data.image || "https://www.purix.ai/logo_1024x1024.png",
+          "image": data.image || "https://www.wonderix.app/logo_1024x1024.png",
           "datePublished": data.publishedDate || new Date().toISOString(),
           "dateModified": data.modifiedDate || data.publishedDate || new Date().toISOString(),
           "author": {
@@ -84,19 +84,19 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
             "name": "Wonderix",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://www.purix.ai/logo_1024x1024.png"
+              "url": "https://www.wonderix.app/logo_1024x1024.png"
             }
           },
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": data.url || "https://www.purix.ai/blog"
+            "@id": data.url || "https://www.wonderix.app/blog"
           }
         }
       
       case 'breadcrumb':
         const items = data.items || [
-          { name: "Home", url: "https://www.purix.ai" },
-          { name: "Blog", url: "https://www.purix.ai/blog" }
+          { name: "Home", url: "https://www.wonderix.app" },
+          { name: "Blog", url: "https://www.wonderix.app/blog" }
         ]
         return {
           "@context": "https://schema.org",
