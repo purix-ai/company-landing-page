@@ -1,4 +1,4 @@
-import { FaCode, FaRobot, FaGraduationCap, FaGamepad, FaPalette, FaChartLine } from 'react-icons/fa'
+import { FaGamepad, FaRobot, FaChartLine } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next'
 
 const Features = () => {
@@ -6,40 +6,25 @@ const Features = () => {
 
   const features = [
     {
-      icon: <FaCode className="text-3xl" />,
-      titleKey: 'features.items.noCode.title',
-      descriptionKey: 'features.items.noCode.description',
+      icon: <FaGamepad className="text-4xl" />,
+      titleKey: 'features.items.intrinsicIntegration.title',
+      subtitleKey: 'features.items.intrinsicIntegration.subtitle',
+      descriptionKey: 'features.items.intrinsicIntegration.description',
       color: 'from-purple-500 to-purple-600'
     },
     {
-      icon: <FaRobot className="text-3xl" />,
-      titleKey: 'features.items.aiPowered.title',
-      descriptionKey: 'features.items.aiPowered.description',
+      icon: <FaRobot className="text-4xl" />,
+      titleKey: 'features.items.aiTutoring.title',
+      subtitleKey: 'features.items.aiTutoring.subtitle',
+      descriptionKey: 'features.items.aiTutoring.description',
       color: 'from-blue-500 to-blue-600'
     },
     {
-      icon: <FaGraduationCap className="text-3xl" />,
-      titleKey: 'features.items.madeForEveryone.title',
-      descriptionKey: 'features.items.madeForEveryone.description',
+      icon: <FaChartLine className="text-4xl" />,
+      titleKey: 'features.items.parentDashboard.title',
+      subtitleKey: 'features.items.parentDashboard.subtitle',
+      descriptionKey: 'features.items.parentDashboard.description',
       color: 'from-green-500 to-green-600'
-    },
-    {
-      icon: <FaGamepad className="text-3xl" />,
-      titleKey: 'features.items.engagingGames.title',
-      descriptionKey: 'features.items.engagingGames.description',
-      color: 'from-orange-500 to-orange-600'
-    },
-    {
-      icon: <FaPalette className="text-3xl" />,
-      titleKey: 'features.items.customizable.title',
-      descriptionKey: 'features.items.customizable.description',
-      color: 'from-pink-500 to-pink-600'
-    },
-    {
-      icon: <FaChartLine className="text-3xl" />,
-      titleKey: 'features.items.trackProgress.title',
-      descriptionKey: 'features.items.trackProgress.description',
-      color: 'from-indigo-500 to-indigo-600'
     }
   ]
 
@@ -58,19 +43,22 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 group"
+              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group border-t-4 border-transparent hover:border-primary-500"
             >
-              <div className={`w-14 h-14 rounded-lg bg-gradient-to-r ${feature.color} flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300`}>
+              <div className={`w-16 h-16 rounded-lg bg-gradient-to-r ${feature.color} flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 {t(feature.titleKey)}
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm text-primary-600 font-semibold mb-4">
+                {t(feature.subtitleKey)}
+              </p>
+              <p className="text-gray-600 leading-relaxed">
                 {t(feature.descriptionKey)}
               </p>
             </div>

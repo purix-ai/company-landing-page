@@ -4,16 +4,12 @@ import { useTranslation } from 'react-i18next'
 const Waitlist = () => {
   const { t, i18n } = useTranslation()
   
-  // Google Form URLs for different languages
-  const GOOGLE_FORM_URLS = {
-    'zh-TW': 'https://forms.gle/W2ByQBXBbGzwjRP97',
-    'en-US': 'https://forms.gle/B191TLxbes4rnDDn9'
-  }
+  // Google Form URL for Founding Family Program
+  const FOUNDING_FAMILY_FORM_URL = 'https://forms.gle/NXSDvaYcy92VEs1d7'
   
   const handleJoinWaitlist = () => {
-    // Get the appropriate form URL based on current language
-    const formUrl = GOOGLE_FORM_URLS[i18n.language] || GOOGLE_FORM_URLS['en-US']
-    window.open(formUrl, '_blank', 'noopener,noreferrer')
+    // Open the Founding Family Program application form
+    window.open(FOUNDING_FAMILY_FORM_URL, '_blank', 'noopener,noreferrer')
   }
 
   return (

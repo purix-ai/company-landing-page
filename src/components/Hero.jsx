@@ -17,13 +17,17 @@ const Hero = () => {
                 {t('hero.introducing')}
               </div>
               
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 animate-fade-in">
                 {t('hero.headline')}{' '}
                 <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
                   {t('hero.headlineHighlight')}
                 </span>
               </h1>
-          
+
+              <p className="text-2xl font-semibold text-gray-700 mb-6 animate-fade-in">
+                {t('hero.subheadline')}
+              </p>
+
               <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto animate-slide-up">
                 {t('hero.description')}
               </p>
@@ -44,13 +48,17 @@ const Hero = () => {
               </div>
             </div>
 
-          <div className="mt-12 grid grid-cols-2 gap-8 max-w-lg mx-auto">
+          <div className="mt-12 grid grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-gray-900">0</div>
-              <div className="text-sm text-gray-600">{t('hero.stats.noCoding')}</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">50%</div>
+              <div className="text-sm text-gray-600">{t('hero.stats.learningBoost')}</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-gray-900">100%</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">7x</div>
+              <div className="text-sm text-gray-600">{t('hero.stats.activeTime')}</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">24/7</div>
               <div className="text-sm text-gray-600">{t('hero.stats.aiPowered')}</div>
             </div>
           </div>

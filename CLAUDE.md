@@ -44,10 +44,10 @@ npm run test:coverage  # Run tests with coverage
 src/
 ├── components/
 │   ├── Header.jsx       - Navigation with Wonderix logo
-│   ├── Hero.jsx         - Main hero with logo, headline, CTA
-│   ├── Features.jsx     - 6 key features grid
-│   ├── HowItWorks.jsx   - 3-step process visualization
-│   ├── Waitlist.jsx     - Google Form integration for waitlist
+│   ├── Hero.jsx         - Main hero with headline, stats, CTA
+│   ├── Features.jsx     - 3 pillars: True Gamification, AI Tutoring, Parent Dashboard
+│   ├── HowItWorks.jsx   - 3-step science-based approach
+│   ├── Waitlist.jsx     - Google Form integration for Founding Family Program
 │   ├── Blog.jsx         - Blog listing page
 │   ├── BlogPost.jsx     - Individual blog post view
 │   ├── Footer.jsx       - Company info and links
@@ -78,9 +78,11 @@ src/
 ## Key Features
 - Responsive design (mobile-first)
 - Smooth animations and transitions
-- Google Forms integration for waitlist
+- Google Forms integration for Founding Family Program
 - Purple/blue gradient color scheme
 - Clean, minimalistic design
+- Science-backed messaging (50% learning boost, 7x active time)
+- Three-pillar approach: True Gamification, AI Tutoring, Parent Dashboard
 
 ## Important Configuration
 
@@ -89,12 +91,11 @@ src/
 - **LinkedIn**: https://www.linkedin.com/company/105497266
 
 ### Google Form Integration
-The waitlist uses Google Forms with language-specific forms:
-- **Traditional Chinese (zh-TW)**: https://forms.gle/W2ByQBXBbGzwjRP97
-- **English (en-US)**: https://forms.gle/B191TLxbes4rnDDn9
+The Founding Family Program uses a unified Google Form:
+- **Founding Family Program Application**: https://forms.gle/NXSDvaYcy92VEs1d7
 
-The forms are automatically selected based on the user's language setting.
-URLs are configured in `src/components/Waitlist.jsx` lines 8-11.
+This form is used for both English and Traditional Chinese languages.
+The URL is configured in `src/components/Waitlist.jsx` line 8.
 
 ### Logo Files
 - Header logo: `/public/logo.png` (small version)
@@ -112,10 +113,15 @@ Uncomment these sections when demo video is ready.
 - Configured in `tailwind.config.js`
 
 ## Content Updates
-- Target audience: Teachers AND parents (not just educators)
-- No curriculum alignment focus
-- Launch date: Q4 2025
-- Waitlist benefits: Early access, lifetime discount, shape the product
+- **Primary audience**: Parents (focus on children's learning pain points)
+- **Secondary audience**: Teachers and educators
+- **Key positioning**: Results-oriented (50% boost, 7x time) vs. tool-oriented
+- **Differentiation**: True gamification (learning IS gameplay) vs. false gamification (quizzes with rewards)
+- **Launch date**: Q4 2025
+- **Founding Family Program**: Limited to 10 families
+  - Completely free early access
+  - Lifetime 20% discount (8折)
+  - 30-minute co-creation session 2-3 weeks post-launch
 
 ## Architecture
 

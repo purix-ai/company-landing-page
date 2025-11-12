@@ -2,92 +2,84 @@
   "header": {
     "features": "功能特色",
     "howItWorks": "使用方式",
-    "joinWaitlist": "加入等候名單"
+    "joinWaitlist": "加入創始家庭"
   },
   "hero": {
     "introducing": "隆重推出 Wonderix",
-    "headline": "用 AI 在幾分鐘內",
-    "headlineHighlight": "打造教育遊戲",
-    "description": "Wonderix 讓老師和家長透過對話就能創造引人入勝的學習體驗。無需寫程式或學習複雜工具-只要描述你的遊戲想法，看著 AI 將它變為現實。",
-    "joinWaitlist": "加入等候名單",
+    "headline": "打造引人入勝且高效的",
+    "headlineHighlight": "教育遊戲",
+    "subheadline": "讓孩子喜愛學習",
+    "description": "別再讓孩子痛苦死背了！Wonderix 結合神經科學、AI 與遊戲設計，打造真正引人入勝的教育遊戲，讓學習本身就是遊戲規則—而非只是包裹獎勵的測驗。",
+    "joinWaitlist": "加入創始家庭計畫",
     "watchDemo": "觀看示範",
     "stats": {
-      "noCoding": "不需程式能力",
-      "timeToGame": "快速製作遊戲",
-      "aiPowered": "AI 驅動"
+      "learningBoost": "學習成效提升",
+      "activeTime": "更多主動學習時間",
+      "aiPowered": "AI 智能輔導"
     }
   },
   "features": {
-    "title": "創造精彩教育遊戲的",
-    "titleHighlight": "一切所需",
-    "subtitle": "Wonderix 結合 AI 的力量與直覺設計，幫助你打造孩子喜愛、人人都能創作的遊戲。",
+    "title": "讓每個孩子喜愛學習的",
+    "titleHighlight": "三大承諾",
+    "subtitle": "基於神經科學、認知心理學與教育研究—提供經過驗證的學習成效。",
     "items": {
-      "noCode": {
-        "title": "無程式碼平台",
-        "description": "透過簡單對話創造複雜的教育遊戲。描述你想要的，AI 會處理其餘部分。"
+      "intrinsicIntegration": {
+        "title": "真正的遊戲化",
+        "subtitle": "內在動機與心理需求滿足",
+        "description": "學習深度融入遊戲玩法，不是測驗包糖衣。知識成為遊戲規則，孩子須運用所學才能前進。內在動機驅動，持續投入，達到 7 倍主動學習時間。"
       },
-      "aiPowered": {
-        "title": "AI 驅動創作",
-        "description": "先進的 AI 理解教育目標，自動生成引人入勝、適齡的內容。"
+      "aiTutoring": {
+        "title": "AI 即時輔導",
+        "subtitle": "智能輔導系統",
+        "description": "AI 教練全程陪伴，即時偵測學習困難，個人化調整難度與提示。在關鍵時刻提供個人化的提示、解釋或調整難度，幫助孩子克服挑戰。"
       },
-      "madeForEveryone": {
-        "title": "為所有人打造",
-        "description": "直覺的教育內容創作工具。完美適合老師、家長，以及任何想讓學習變有趣的人。"
-      },
-      "engagingGames": {
-        "title": "引人入勝的遊戲",
-        "description": "孩子喜歡透過遊戲學習。創造拼圖、測驗、冒險等等，讓教育變有趣。"
-      },
-      "customizable": {
-        "title": "完全客製化",
-        "description": "個人化角色、主題、難度等級和學習目標，符合你的需求。"
-      },
-      "trackProgress": {
-        "title": "追蹤進度",
-        "description": "內建分析工具幫助你了解學生的學習狀況，以及需要額外支援的地方。"
+      "parentDashboard": {
+        "title": "家長儀表板",
+        "subtitle": "透明掌握學習歷程",
+        "description": "透明掌握學習歷程，隨時了解孩子進度、數據化呈現成長軌跡。家長可以看到具體的學習成果與能力發展，更有信心支持孩子的學習旅程。"
       }
     }
   },
   "howItWorks": {
-    "title": "三個簡單步驟",
-    "titleHighlight": "創造遊戲",
-    "subtitle": "不需要技術技能。如果你能描述它，Wonderix 就能建造它。",
+    "title": "我們如何",
+    "titleHighlight": "達成承諾",
+    "subtitle": "基於嚴謹的教育科學—不只是好玩，更是有效。",
     "steps": {
       "describe": {
-        "title": "描述你的遊戲",
-        "description": "告訴 Wonderix 你想創造什麼樣的教育遊戲。指定主題、年齡層和學習目標。"
+        "title": "學習內容即遊戲規則",
+        "description": "知識內化為遊戲核心機制，玩家須運用所學才能前進。這是真正的遊戲化，而非表面獎勵。"
       },
       "aiCreates": {
-        "title": "AI 即時創造",
-        "description": "我們的 AI 理解你的需求，生成完整、可玩的遊戲，包含圖形、機制和教育內容。"
+        "title": "即時回饋與引導",
+        "description": "AI 即時識別學習路徑、進度與困難。個人化提示與適性調整難度，幫助孩子克服挑戰不放棄、不無聊。"
       },
       "sharePlay": {
-        "title": "分享與遊玩",
-        "description": "如需要可自訂，然後與學生分享你的遊戲。追蹤他們的進度，隨著學習調整難度。"
+        "title": "促進內在動機",
+        "description": "多元路徑達成能力感、客製化變得與孩子本人有關聯、玩家控制達自主性—滿足心理需求才能持續學習動機。"
       }
     }
   },
   "waitlist": {
-    "badge": "成為首批用戶",
-    "subtitle": "加入我們的專屬等候名單，搶先體驗 Wonderix",
-    "whyJoin": "為什麼要加入等候名單？",
+    "badge": "限定 10 組家庭",
+    "subtitle": "加入創始家庭計畫，共同打造更優質的學習工具",
+    "whyJoin": "為什麼要加入創始家庭計畫？",
     "benefits": {
       "earlyAccess": {
-        "title": "搶先體驗：",
-        "description": "成為第一批在我們推出時試用 Wonderix 的用戶"
+        "title": "獨家搶先體驗：",
+        "description": "成為第一批試用 Wonderix 的家庭，早期試用期間完全免費"
       },
       "exclusivePricing": {
-        "title": "獨家優惠：",
-        "description": "作為早期支持者獲得終身折扣"
+        "title": "終身 8 折優惠：",
+        "description": "鎖定終身 8 折優惠（非公開銷售）—這是一份專屬特權，而非公開價格"
       },
       "shapeProduct": {
-        "title": "塑造產品：",
-        "description": "你的回饋將直接影響我們的開發"
+        "title": "深度參與回饋：",
+        "description": "在我們推出 2-3 週內與我們進行約 30 分鐘線上討論，並針對實際教學需求進度，共同優化 Wonderix"
       }
     },
-    "joinButton": "立即加入等候名單",
-    "noSpam": "絕不發送垃圾郵件。我們只會向你發送 Wonderix 更新資訊。",
-    "betaRelease": "測試版發布"
+    "joinButton": "申請創始家庭計畫",
+    "noSpam": "我們珍視您的信任。僅限 10 組家庭名額—您的回饋將幫助我們為所有孩子打造更好的學習體驗。",
+    "betaRelease": "2025 年第四季"
   },
   "footer": {
     "tagline": "打造教育科技的未來。Wonderix 是我們的旗艦產品，讓遊戲化學習觸手可及。",
