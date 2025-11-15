@@ -14,11 +14,11 @@ const Hero = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 animate-fade-in">
-                {t('hero.headline')}
+                {t('hero.headline')}{' '}
                 <span className="bg-gradient-to-r from-yellow-500 to-secondary-500 bg-clip-text text-transparent">
                   {t('hero.headlineEngaging')}
-                </span>
-                {t('hero.headlineAnd')}
+                </span>{' '}
+                {t('hero.headlineAnd')}{' '}
                 <span className="bg-gradient-to-r from-primary-500 to-deepBlue-500 bg-clip-text text-transparent">
                   {t('hero.headlineEffective')}
                 </span>
