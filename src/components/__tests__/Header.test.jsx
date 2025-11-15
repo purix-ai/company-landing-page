@@ -28,17 +28,16 @@ describe('Header', () => {
 
   it('renders navigation links', () => {
     render(<Header />)
-    
+
     expect(screen.getByText('Features')).toBeInTheDocument()
     expect(screen.getByText('How It Works')).toBeInTheDocument()
-    
+
     // Check for desktop navigation
     expect(screen.getByLabelText('Blog (desktop navigation)')).toBeInTheDocument()
     expect(screen.getByLabelText('Join waitlist (desktop navigation)')).toBeInTheDocument()
-    
-    // Check for mobile navigation  
-    expect(screen.getByLabelText('Blog (mobile navigation)')).toBeInTheDocument()
-    expect(screen.getByLabelText('Join waitlist (mobile navigation)')).toBeInTheDocument()
+
+    // Check for mobile menu toggle button
+    expect(screen.getByLabelText('Toggle mobile menu')).toBeInTheDocument()
   })
 
   it('scrolls to sections when on home page', () => {
@@ -83,12 +82,27 @@ describe('Header', () => {
     expect(blogLinks[0]).toHaveAttribute('href', '/blog')
   })
 
-  it('renders mobile navigation', () => {
+  it('toggles mobile navigation menu', () => {
     render(<Header />)
-    
-    // Check that mobile navigation elements exist (they may be hidden by CSS)
-    const mobileElements = screen.getAllByText('Blog')
-    expect(mobileElements.length).toBeGreaterThanOrEqual(1)
+
+    // Mobile menu should not be visible initially
+    expect(screen.queryByLabelText('Mobile navigation')).not.toBeInTheDocument()
+
+    // Click the hamburger menu button
+    const menuToggle = screen.getByLabelText('Toggle mobile menu')
+    fireEvent.click(menuToggle)
+
+    // Mobile menu should now be visible with all links
+    expect(screen.getByLabelText('Mobile navigation')).toBeInTheDocument()
+
+    // All navigation items should be in the mobile menu
+    const allFeatures = screen.getAllByText('Features')
+    const allHowItWorks = screen.getAllByText('How It Works')
+    const allBlogs = screen.getAllByText('Blog')
+
+    expect(allFeatures.length).toBeGreaterThanOrEqual(2) // Desktop + Mobile
+    expect(allHowItWorks.length).toBeGreaterThanOrEqual(2) // Desktop + Mobile
+    expect(allBlogs.length).toBeGreaterThanOrEqual(2) // Desktop + Mobile
   })
 
   it('handles missing sections gracefully', () => {
