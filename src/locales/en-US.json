@@ -146,5 +146,11 @@
       "role": "Founder & CEO",
       "bio": "Bruce brings over a decade of experience in machine learning and AI product development, having led innovative products across semiconductor, digital reading platforms, healthcare information systems, and live streaming applications. As a father of two, Bruce understands firsthand how children thrive when learning is fun and engaging. This insight drives his mission to revolutionize educational gaming through AI-powered tools."
     }
+  },
+  "seo": {
+    "home": {
+      "title": "Wonderix | Help Kids Fall in Love with Learning",
+      "description": "Create engaging educational games with Wonderix. No coding required. AI-powered platform for teachers and parents to build personalized learning experiences through conversation."
+    }
   }
 }

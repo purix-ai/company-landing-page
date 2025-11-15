@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Features from './components/Features'
@@ -17,27 +18,31 @@ import StructuredData from './components/StructuredData'
 import ScrollToTop from './components/ScrollToTop'
 
 // Home page component
-const HomePage = () => (
-  <>
-    <SEO
-      title="Wonderix - AI-Powered Educational Game Creation Platform"
-      description="Create engaging educational games with Wonderix. No coding required. AI-powered platform for teachers and parents to build personalized learning experiences through conversation."
-      keywords="educational games, AI education, no-code game builder, teacher tools, parent resources, game-based learning, Wonderix, edtech, educational technology, AI game creation"
-      url="https://www.wonderix.app"
-    />
-    <StructuredData type="organization" />
-    <StructuredData type="software" />
-    <StructuredData type="website" />
-    <StructuredData type="faq" />
-    <main>
-      <Hero />
-      <Features />
-      <Founders />
-      <HowItWorks />
-      <Waitlist />
-    </main>
-  </>
-)
+const HomePage = () => {
+  const { t } = useTranslation()
+
+  return (
+    <>
+      <SEO
+        title={t('seo.home.title')}
+        description={t('seo.home.description')}
+        keywords="educational games, AI education, no-code game builder, teacher tools, parent resources, game-based learning, Wonderix, edtech, educational technology, AI game creation, 遊戲化學習, 遊戲式學習, 教育遊戲, AI教育"
+        url="https://www.wonderix.app"
+      />
+      <StructuredData type="organization" />
+      <StructuredData type="software" />
+      <StructuredData type="website" />
+      <StructuredData type="faq" />
+      <main>
+        <Hero />
+        <Features />
+        <Founders />
+        <HowItWorks />
+        <Waitlist />
+      </main>
+    </>
+  )
+}
 
 function App() {
   return (
