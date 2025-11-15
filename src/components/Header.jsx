@@ -58,9 +58,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" onClick={handleLogoClick} className="flex items-center cursor-pointer">
             <img
-              src="/logo_1024x1024.png"
+              src="/logo.png"
               alt="Wonderix Logo"
-              className="h-10 md:h-12 w-auto"
+              className="h-10 md:h-12 w-auto object-contain"
             />
           </Link>
           

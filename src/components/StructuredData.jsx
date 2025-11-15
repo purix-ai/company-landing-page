@@ -10,7 +10,7 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "name": "Wonderix",
           "url": "https://www.wonderix.app",
           "logo": "https://www.wonderix.app/logo_1024x1024.png",
-          "description": "Building the Future of Educational Technology",
+          "description": "Building the Future of Educational Technology through AI-powered gamified learning and game-based educational experiences",
           "sameAs": [
             "https://www.linkedin.com/company/105497266"
           ]
@@ -29,7 +29,7 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
             "priceCurrency": "USD",
             "availability": "https://schema.org/PreOrder"
           },
-          "description": "AI-powered no-code platform for teachers and parents to build educational games through conversation",
+          "description": "AI-powered no-code platform for teachers and parents to build gamified learning experiences and game-based educational games through conversation. True gamification where learning is the gameplay.",
           "creator": {
             "@type": "Organization",
             "name": "Wonderix"
@@ -37,10 +37,10 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "datePublished": "2025-01-01",
           "featureList": [
             "No coding required",
-            "AI-powered game creation",
-            "Educational content",
-            "Personalized learning",
-            "Multiple game types"
+            "AI-powered gamified learning",
+            "True gamification and game-based learning",
+            "Personalized learning experiences",
+            "Multiple educational game types"
           ]
         }
       
