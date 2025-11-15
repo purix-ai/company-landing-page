@@ -5,9 +5,13 @@
     "joinWaitlist": "加入創始家庭"
   },
   "hero": {
-    "headline": "打造引人入勝且高效的",
+    "headline": "打造",
+    "headlineEngaging": "引人入勝",
+    "headlineAnd": "且",
+    "headlineEffective": "高效",
+    "headlineEnd": "的",
     "headlineHighlight": "教育遊戲",
-    "subheadline": "讓孩子喜愛學習 家長輕鬆且放心",
+    "subheadline": "讓孩子愛上學習 家長無比輕鬆",
     "description": "結合老師經驗與深度遊戲化設計，讓學習本身就是遊戲規則,而非只是包裹獎勵的測驗。",
     "joinWaitlist": "加入創始家庭計畫",
     "watchDemo": "觀看示範",

@@ -6,7 +6,9 @@ describe('Hero', () => {
   it('renders hero content', () => {
     render(<Hero />)
 
-    expect(screen.getByText(/Create Engaging and Effective/)).toBeInTheDocument()
+    // Check for gradient colored words in headline
+    expect(screen.getByText('Engaging')).toBeInTheDocument()
+    expect(screen.getByText('Effective')).toBeInTheDocument()
     expect(screen.getByText('Educational Games')).toBeInTheDocument()
     expect(screen.getByText(/Combining teacher expertise with deep gamification design/)).toBeInTheDocument()
   })

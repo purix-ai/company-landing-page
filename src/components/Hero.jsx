@@ -8,13 +8,22 @@ const Hero = () => {
   }
 
   return (
-    <section className="pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden bg-gradient-to-br from-primary-500/10 via-accent-500/10 to-yellow-500/10 relative">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 via-transparent to-yellow-500/5"></div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 animate-fade-in">
-                {t('hero.headline')}{' '}
-                <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+                {t('hero.headline')}
+                <span className="bg-gradient-to-r from-yellow-500 to-secondary-500 bg-clip-text text-transparent">
+                  {t('hero.headlineEngaging')}
+                </span>
+                {t('hero.headlineAnd')}
+                <span className="bg-gradient-to-r from-primary-500 to-deepBlue-500 bg-clip-text text-transparent">
+                  {t('hero.headlineEffective')}
+                </span>
+                {t('hero.headlineEnd')}{' '}
+                <span className="bg-gradient-to-r from-accent-500 to-aqua-500 bg-clip-text text-transparent">
                   {t('hero.headlineHighlight')}
                 </span>
               </h1>
@@ -30,7 +39,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
                 <button
                   onClick={scrollToWaitlist}
-                  className="px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
+                  className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-secondary-500 text-white rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
                 >
                   {t('hero.joinWaitlist')}
                 </button>
@@ -45,15 +54,15 @@ const Hero = () => {
 
           <div className="mt-12 grid grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">50%</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-yellow-500 to-secondary-500 bg-clip-text text-transparent">50%</div>
               <div className="text-sm text-gray-600">{t('hero.stats.learningBoost')}</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">7x</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-yellow-500 to-secondary-500 bg-clip-text text-transparent">7x</div>
               <div className="text-sm text-gray-600">{t('hero.stats.activeTime')}</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">24/7</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-yellow-500 to-secondary-500 bg-clip-text text-transparent">24/7</div>
               <div className="text-sm text-gray-600">{t('hero.stats.aiPowered')}</div>
             </div>
           </div>

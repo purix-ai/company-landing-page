@@ -5,9 +5,13 @@
     "joinWaitlist": "Join Founding Family"
   },
   "hero": {
-    "headline": "Create Engaging and Effective",
+    "headline": "Create",
+    "headlineEngaging": "Engaging",
+    "headlineAnd": "and",
+    "headlineEffective": "Effective",
+    "headlineEnd": "",
     "headlineHighlight": "Educational Games",
-    "subheadline": "Help Children Fall in Love with Learning—Parents Feel Confident and at Ease",
+    "subheadline": "Children Fall in Love with Learning and Parents Feel Incredibly Relaxed",
     "description": "Combining teacher expertise with deep gamification design, where learning itself becomes the game rules—not just quizzes wrapped in rewards.",
     "joinWaitlist": "Join Founding Family Program",
     "watchDemo": "Watch Demo",

@@ -13,11 +13,12 @@ const Waitlist = () => {
   }
 
   return (
-    <section id="waitlist" className="py-16 lg:py-24 bg-gradient-to-br from-primary-50 via-white to-secondary-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="waitlist" className="py-16 lg:py-24 bg-gradient-to-br from-primary-500/10 via-accent-500/5 to-yellow-500/10 relative">
+      <div className="absolute inset-0 bg-gradient-to-tl from-yellow-500/5 via-transparent to-primary-500/5"></div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
-            <div className="bg-gradient-to-r from-primary-600 to-secondary-600 p-8 text-white text-center">
+            <div className="bg-gradient-to-r from-accent-500 to-aqua-500 p-8 text-white text-center">
               <FaUsers className="text-5xl mx-auto mb-4 opacity-90" />
               <h2 className="text-3xl sm:text-4xl font-bold mb-2">
                 {t('waitlist.badge')}
@@ -58,7 +59,7 @@ const Waitlist = () => {
                 <div className="text-center">
                   <button
                     onClick={handleJoinWaitlist}
-                    className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
+                    className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500 to-secondary-500 text-white rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
                   >
                     <FaEnvelope className="mr-3" />
                     {t('waitlist.joinButton')}
