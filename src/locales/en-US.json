@@ -5,10 +5,14 @@
     "joinWaitlist": "Join Founding Family"
   },
   "hero": {
-    "headline": "Create Engaging and Effective",
+    "headline": "Create",
+    "headlineEngaging": "Engaging",
+    "headlineAnd": "and",
+    "headlineEffective": "Effective",
+    "headlineEnd": "",
     "headlineHighlight": "Educational Games",
-    "subheadline": "Help Children Fall in Love with Learning—Parents Feel Confident and at Ease",
-    "description": "Combining teacher expertise with deep gamification design, where learning itself becomes the game rules—not just quizzes wrapped in rewards.",
+    "subheadline": "Children Fall in Love with Learning and Parents Feel Incredibly Relaxed",
+    "description": "Combining teacher expertise with deep gamification design, where learning itself becomes the game rules, not just quizzes wrapped in rewards.",
     "joinWaitlist": "Join Founding Family Program",
     "watchDemo": "Watch Demo",
     "stats": {
@@ -20,17 +24,17 @@
   "features": {
     "title": "Three Pillars That Make Children",
     "titleHighlight": "Love Learning",
-    "subtitle": "Based on neuroscience, cognitive psychology, and educational research—delivering proven results.",
+    "subtitle": "Based on neuroscience, cognitive psychology, and educational research. Delivering proven results.",
     "items": {
       "intrinsicIntegration": {
         "title": "True Gamification",
         "subtitle": "Intrinsic Integration",
-        "description": "Learning is deeply integrated into gameplay, not just tests with rewards. Knowledge becomes game rules—kids must use what they learn to progress. Driven by intrinsic motivation for 7x more active learning time."
+        "description": "Learning is deeply integrated into gameplay, not just tests with rewards. Knowledge becomes game rules. Kids must use what they learn to progress. Driven by intrinsic motivation for 7x more active learning time."
       },
       "aiTutoring": {
         "title": "AI Real-Time Tutoring",
         "subtitle": "Intelligent Tutoring System",
-        "description": "AI tutors available 24/7, never tired. Precisely diagnose learning gaps, provide personalized hints at critical moments, and adapt difficulty—helping kids overcome challenges independently."
+        "description": "AI tutors available 24/7, never tired. Precisely diagnose learning gaps, provide personalized hints at critical moments, and adapt difficulty to help kids overcome challenges independently."
       },
       "parentDashboard": {
         "title": "Parent Dashboard",
@@ -42,11 +46,11 @@
   "howItWorks": {
     "title": "Achieve Results",
     "titleHighlight": "How We",
-    "subtitle": "Backed by rigorous educational science—not just fun, but effective.",
+    "subtitle": "Backed by rigorous educational science. Not just fun, but effective.",
     "steps": {
       "describe": {
         "title": "Learning Content = Game Rules",
-        "description": "Knowledge is internalized as core game mechanics. Players must apply what they learn to progress—this is true gamification, not superficial rewards."
+        "description": "Knowledge is internalized as core game mechanics. Players must apply what they learn to progress. This is true gamification, not superficial rewards."
       },
       "aiCreates": {
         "title": "Instant Feedback & Guidance",
@@ -54,7 +58,7 @@
       },
       "sharePlay": {
         "title": "Foster Intrinsic Motivation",
-        "description": "Multiple pathways to competence, personalization for relatedness, and player control for autonomy—satisfying psychological needs leads to sustained learning motivation."
+        "description": "Multiple pathways to competence, personalization for relatedness, and player control for autonomy. Satisfying psychological needs leads to sustained learning motivation."
       }
     }
   },
@@ -69,7 +73,7 @@
       },
       "exclusivePricing": {
         "title": "Lifetime 20% Off:",
-        "description": "Lock in a permanent 20% discount as a founding family—a special privilege, not public pricing"
+        "description": "Lock in a permanent 20% discount as a founding family. A special privilege, not public pricing"
       },
       "shapeProduct": {
         "title": "Co-Create Together:",
@@ -77,7 +81,7 @@
       }
     },
     "joinButton": "Apply for Founding Family Program",
-    "noSpam": "We value your trust. Only 10 spots available—your feedback will help us build better learning experiences for all children.",
+    "noSpam": "We value your trust. Only 10 spots available. Your feedback will help us build better learning experiences for all children.",
     "betaRelease": "Q4 2025"
   },
   "footer": {

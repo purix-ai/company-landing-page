@@ -46,7 +46,9 @@ describe('App Integration Tests', () => {
   it('renders home page by default', () => {
     render(<TestApp />, { initialEntries: ['/'] })
 
-    expect(screen.getByText(/Create Engaging and Effective/)).toBeInTheDocument()
+    // Check for gradient headline parts
+    expect(screen.getByText('Engaging')).toBeInTheDocument()
+    expect(screen.getByText('Educational Games')).toBeInTheDocument()
     // Check for header logo specifically
     const headerLogo = screen.getAllByAltText('Wonderix Logo')[0]
     expect(headerLogo).toBeInTheDocument()
@@ -98,7 +100,7 @@ describe('App Integration Tests', () => {
 
     // Should navigate back to home
     await waitFor(() => {
-      expect(screen.getByText(/Create Engaging and Effective/)).toBeInTheDocument()
+      expect(screen.getByText('Engaging')).toBeInTheDocument()
     })
   })
 

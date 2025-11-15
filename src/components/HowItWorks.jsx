@@ -10,31 +10,32 @@ const HowItWorks = () => {
       icon: <FaComments className="text-3xl" />,
       titleKey: 'howItWorks.steps.describe.title',
       descriptionKey: 'howItWorks.steps.describe.description',
-      color: 'from-primary-500 to-primary-600'
+      color: 'from-accent-500 to-aqua-500'  // Innovation gradient
     },
     {
       number: '02',
       icon: <FaMagic className="text-3xl" />,
       titleKey: 'howItWorks.steps.aiCreates.title',
       descriptionKey: 'howItWorks.steps.aiCreates.description',
-      color: 'from-secondary-500 to-secondary-600'
+      color: 'from-primary-500 to-deepBlue-500'  // Technology gradient
     },
     {
       number: '03',
       icon: <FaShare className="text-3xl" />,
       titleKey: 'howItWorks.steps.sharePlay.title',
       descriptionKey: 'howItWorks.steps.sharePlay.description',
-      color: 'from-accent-500 to-accent-600'
+      color: 'from-yellow-500 to-secondary-500'  // Energy gradient
     }
   ]
 
   return (
-    <section id="how-it-works" className="py-16 lg:py-24 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="how-it-works" className="py-16 lg:py-24 bg-gradient-to-br from-accent-500/8 via-white to-aqua-500/5 relative">
+      <div className="absolute inset-0 bg-gradient-to-tr from-accent-500/3 via-transparent to-aqua-500/3"></div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             {t('howItWorks.titleHighlight')}{' '}
-            <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent-500 to-aqua-500 bg-clip-text text-transparent">
               {t('howItWorks.title')}
             </span>
           </h2>
@@ -44,7 +45,7 @@ const HowItWorks = () => {
         </div>
 
         <div className="relative">
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500 opacity-20 transform -translate-y-1/2"></div>
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-accent-500 via-primary-500 to-yellow-500 opacity-20 transform -translate-y-1/2"></div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative">
             {steps.map((step, index) => (
