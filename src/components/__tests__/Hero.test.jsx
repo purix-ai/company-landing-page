@@ -8,7 +8,7 @@ describe('Hero', () => {
 
     expect(screen.getByText(/Create Engaging and Effective/)).toBeInTheDocument()
     expect(screen.getByText('Educational Games')).toBeInTheDocument()
-    expect(screen.getByText(/Stop forcing kids to memorize/)).toBeInTheDocument()
+    expect(screen.getByText(/Combining teacher expertise with deep gamification design/)).toBeInTheDocument()
   })
 
   it('renders action buttons', () => {
