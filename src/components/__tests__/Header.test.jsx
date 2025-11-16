@@ -34,7 +34,6 @@ describe('Header', () => {
 
     // Check for desktop navigation
     expect(screen.getByLabelText('Blog (desktop navigation)')).toBeInTheDocument()
-    expect(screen.getByLabelText('Join waitlist (desktop navigation)')).toBeInTheDocument()
 
     // Check for mobile menu toggle button
     expect(screen.getByLabelText('Toggle mobile menu')).toBeInTheDocument()

@@ -90,13 +90,6 @@ const Header = () => {
               {t('footer.links.blog')}
             </Link>
             <LanguageSwitcher />
-            <button
-              onClick={() => scrollToSection('waitlist')}
-              className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-secondary-500 text-white rounded-full font-medium hover:shadow-lg transition-shadow"
-              aria-label="Join waitlist (desktop navigation)"
-            >
-              {t('header.joinWaitlist')}
-            </button>
           </nav>
 
           <div className="flex items-center gap-3 md:hidden">
@@ -135,13 +128,6 @@ const Header = () => {
               >
                 {t('footer.links.blog')}
               </Link>
-              <button
-                onClick={() => scrollToSection('waitlist')}
-                className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-secondary-500 text-white rounded-full font-medium text-center mx-2"
-                aria-label="Join waitlist"
-              >
-                {t('header.joinWaitlist')}
-              </button>
             </div>
           </nav>
         )}

@@ -58,15 +58,15 @@ const Waitlist = () => {
               <div className="border-t pt-8">
                 <div className="text-center">
                   <button
-                    onClick={handleJoinWaitlist}
-                    className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500 to-secondary-500 text-white rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
+                    disabled
+                    className="inline-flex items-center px-8 py-4 bg-gray-400 text-white rounded-full font-semibold text-lg cursor-not-allowed opacity-60"
                   >
-                    <FaEnvelope className="mr-3" />
-                    {t('waitlist.joinButton')}
+                    <FaCheckCircle className="mr-3" />
+                    {t('waitlist.fullButton')}
                   </button>
-                  
+
                   <p className="mt-4 text-sm text-gray-600">
-                    {t('waitlist.noSpam')}
+                    {t('waitlist.fullMessage')}
                   </p>
                 </div>
               </div>

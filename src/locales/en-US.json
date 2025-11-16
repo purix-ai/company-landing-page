@@ -81,7 +81,9 @@
       }
     },
     "joinButton": "Apply for Founding Family Program",
+    "fullButton": "Founding Family Program - Full",
     "noSpam": "We value your trust. Only 10 spots available. Your feedback will help us build better learning experiences for all children.",
+    "fullMessage": "Thank you for your interest! The Founding Family Program has reached capacity. Stay tuned for future opportunities.",
     "betaRelease": "Q4 2025"
   },
   "footer": {
