@@ -133,7 +133,7 @@ const BlogPost = () => {
         title={`${post.title} | Wonderix Blog`}
         description={post.excerpt || `Read ${post.title} on the Wonderix blog. Learn about educational game creation and AI-powered learning.`}
         type="article"
-        url={`https://www.wonderix.app/blog/${post.slug || post.id}`}
+        url={`https://www.wonderix.com/blog/${post.slug || post.id}`}
         publishedDate={post.publishedDate}
       />
       <StructuredData
@@ -141,7 +141,7 @@ const BlogPost = () => {
         data={{
           title: post.title,
           description: post.excerpt,
-          url: `https://www.wonderix.app/blog/${post.slug || post.id}`,
+          url: `https://www.wonderix.com/blog/${post.slug || post.id}`,
           publishedDate: post.publishedDate
         }}
       />
@@ -149,9 +149,9 @@ const BlogPost = () => {
         type="breadcrumb"
         data={{
           items: [
-            { name: "Home", url: "https://www.wonderix.app" },
-            { name: "Blog", url: "https://www.wonderix.app/blog" },
-            { name: post.title, url: `https://www.wonderix.app/blog/${post.slug || post.id}` }
+            { name: "Home", url: "https://www.wonderix.com" },
+            { name: "Blog", url: "https://www.wonderix.com/blog" },
+            { name: post.title, url: `https://www.wonderix.com/blog/${post.slug || post.id}` }
           ]
         }}
       />

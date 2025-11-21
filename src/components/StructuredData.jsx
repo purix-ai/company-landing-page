@@ -8,8 +8,8 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "Wonderix",
-          "url": "https://www.wonderix.app",
-          "logo": "https://www.wonderix.app/logo_1024x1024.png",
+          "url": "https://www.wonderix.com",
+          "logo": "https://www.wonderix.com/logo_1024x1024.png",
           "description": "Building the Future of Educational Technology through AI-powered gamified learning and game-based educational experiences",
           "sameAs": [
             "https://www.linkedin.com/company/105497266"
@@ -49,12 +49,12 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "Wonderix",
-          "url": "https://www.wonderix.app",
+          "url": "https://www.wonderix.com",
           "potentialAction": {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://www.wonderix.app/blog?search={search_term_string}"
+              "urlTemplate": "https://www.wonderix.com/blog?search={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
@@ -66,7 +66,7 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "@type": "Article",
           "headline": data.title || "Blog Post",
           "description": data.description || "",
-          "image": data.image || "https://www.wonderix.app/logo_1024x1024.png",
+          "image": data.image || "https://www.wonderix.com/logo_1024x1024.png",
           "datePublished": data.publishedDate || new Date().toISOString(),
           "dateModified": data.modifiedDate || data.publishedDate || new Date().toISOString(),
           "author": {
@@ -78,19 +78,19 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
             "name": "Wonderix",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://www.wonderix.app/logo_1024x1024.png"
+              "url": "https://www.wonderix.com/logo_1024x1024.png"
             }
           },
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": data.url || "https://www.wonderix.app/blog"
+            "@id": data.url || "https://www.wonderix.com/blog"
           }
         }
       
       case 'breadcrumb':
         const items = data.items || [
-          { name: "Home", url: "https://www.wonderix.app" },
-          { name: "Blog", url: "https://www.wonderix.app/blog" }
+          { name: "Home", url: "https://www.wonderix.com" },
+          { name: "Blog", url: "https://www.wonderix.com/blog" }
         ]
         return {
           "@context": "https://schema.org",

@@ -27,7 +27,7 @@ const HomePage = () => {
         title={t('seo.home.title')}
         description={t('seo.home.description')}
         keywords="educational games, AI education, no-code game builder, teacher tools, parent resources, game-based learning, Wonderix, edtech, educational technology, AI game creation, 遊戲化學習, 遊戲式學習, 教育遊戲, AI教育"
-        url="https://www.wonderix.app"
+        url="https://www.wonderix.com"
       />
       <StructuredData type="organization" />
       <StructuredData type="software" />

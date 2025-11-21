@@ -33,7 +33,7 @@ const Blog = () => {
         title="Blog | Wonderix - Educational Game Creation Insights"
         description="Explore articles about AI-powered educational game creation, teaching strategies, and the future of game-based learning with Wonderix."
         keywords="educational games blog, AI education articles, game-based learning insights, edtech blog, Wonderix blog, teaching resources"
-        url="https://www.wonderix.app/blog"
+        url="https://www.wonderix.com/blog"
       />
       <div className="pt-24 pb-16 min-h-screen bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

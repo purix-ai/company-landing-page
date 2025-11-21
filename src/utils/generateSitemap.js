@@ -1,7 +1,7 @@
 import { getBlogPosts } from '../services/contentful'
 
 const generateSitemap = async () => {
-  const siteUrl = 'https://www.wonderix.app'
+  const siteUrl = 'https://www.wonderix.com'
   const currentDate = new Date().toISOString()
   
   // Static pages

@@ -163,7 +163,7 @@ Uncomment these sections when demo video is ready.
 This project is configured to deploy automatically to GitHub Pages using GitHub Actions:
 
 1. **Automatic Deployment**: Every push to `main` branch triggers tests, build and deploy
-2. **Custom Domain**: www.wonderix.app (configured via CNAME file)
+2. **Custom Domain**: www.wonderix.com (configured via CNAME file)
 3. **Base Path**: Set to `/` in `vite.config.js` for custom domain
 
 **GitHub Actions Workflow** (`.github/workflows/deploy.yml`):

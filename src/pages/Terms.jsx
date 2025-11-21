@@ -8,7 +8,7 @@ const Terms = () => {
       <SEO
         title="Terms of Service | Wonderix"
         description="Terms of Service for Wonderix. Read our terms and conditions for using our educational game creation platform."
-        url="https://www.wonderix.app/terms"
+        url="https://www.wonderix.com/terms"
       />
       <div className="min-h-screen bg-gray-50 pt-24 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">

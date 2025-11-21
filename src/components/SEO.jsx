@@ -13,7 +13,7 @@ const SEO = ({
   modifiedDate
 }) => {
   const { i18n } = useTranslation()
-  const siteUrl = 'https://www.wonderix.app'
+  const siteUrl = 'https://www.wonderix.com'
   const defaultImage = `${siteUrl}/logo_1024x1024.png`
   
   const seoTitle = title || 'Wonderix - Building the Future of Educational Technology'

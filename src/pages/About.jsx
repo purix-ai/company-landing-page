@@ -12,7 +12,7 @@ const About = () => {
         title="About Us | Wonderix - Our Mission to Transform Education"
         description="Learn about Wonderix's mission to democratize educational game creation through AI. Meet our team and discover how we're empowering educators worldwide."
         keywords="about Wonderix, educational technology company, AI education mission, Wonderix team, edtech innovation"
-        url="https://www.wonderix.app/about"
+        url="https://www.wonderix.com/about"
       />
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-24 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

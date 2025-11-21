@@ -8,7 +8,7 @@ const Cookies = () => {
       <SEO
         title="Cookie Policy | Wonderix"
         description="Cookie Policy for Wonderix. Learn how we use cookies to improve your experience on our platform."
-        url="https://www.wonderix.app/cookies"
+        url="https://www.wonderix.com/cookies"
       />
       <div className="min-h-screen bg-gray-50 pt-24 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
