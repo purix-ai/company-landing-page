@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.wonderix.com/</loc>
-    <lastmod>2025-08-19</lastmod>
+    <lastmod>2025-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.wonderix.com/" />
@@ -12,11 +12,38 @@
   </url>
   <url>
     <loc>https://www.wonderix.com/blog</loc>
-    <lastmod>2025-08-19</lastmod>
+    <lastmod>2025-11-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.wonderix.com/blog" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wonderix.com/blog" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wonderix.com/blog" />
+  </url>
+  <url>
+    <loc>https://www.wonderix.com/about</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.wonderix.com/about" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://www.wonderix.com/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.wonderix.com/about" />
+  </url>
+  <url>
+    <loc>https://www.wonderix.com/privacy</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.wonderix.com/terms</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.wonderix.com/cookies</loc>
+    <lastmod>2025-11-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

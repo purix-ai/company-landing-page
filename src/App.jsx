@@ -13,6 +13,7 @@ import About from './pages/About'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
 import Cookies from './pages/Cookies'
+import NotFound from './pages/NotFound'
 import SEO from './components/SEO'
 import StructuredData from './components/StructuredData'
 import ScrollToTop from './components/ScrollToTop'
@@ -33,6 +34,7 @@ const HomePage = () => {
       <StructuredData type="software" />
       <StructuredData type="website" />
       <StructuredData type="faq" />
+      <StructuredData type="howto" />
       <main>
         <Hero />
         <Features />
@@ -58,6 +60,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/cookies" element={<Cookies />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>

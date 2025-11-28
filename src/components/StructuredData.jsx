@@ -12,7 +12,9 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
           "logo": "https://www.wonderix.com/logo_1024x1024.png",
           "description": "Building the Future of Educational Technology through AI-powered gamified learning and game-based educational experiences",
           "sameAs": [
-            "https://www.linkedin.com/company/105497266"
+            "https://www.linkedin.com/company/105497266",
+            "https://www.instagram.com/wonderix_edtech/",
+            "https://x.com/wonderix_edtech"
           ]
         }
       
@@ -134,7 +136,54 @@ const StructuredData = ({ type = 'organization', data = {} }) => {
             }
           ]
         }
-      
+
+      case 'person':
+        return {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Bruce Chou",
+          "jobTitle": "Founder & CEO",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Wonderix",
+            "url": "https://www.wonderix.com"
+          },
+          "description": "Technical founder with 10+ years of AI/ML experience. Father of two, passionate about making learning engaging through technology.",
+          "sameAs": [
+            "https://www.linkedin.com/company/105497266",
+            "https://www.instagram.com/wonderix_edtech/",
+            "https://x.com/wonderix_edtech"
+          ]
+        }
+
+      case 'howto':
+        return {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "How Wonderix Creates Effective Educational Games",
+          "description": "Learn how Wonderix transforms learning through AI-powered true gamification where learning IS the gameplay.",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "position": 1,
+              "name": "Learning Content = Game Rules",
+              "text": "Knowledge is internalized as core game mechanics. Players must apply what they learn to progress. This is true gamification, not superficial rewards."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 2,
+              "name": "Instant Feedback & Guidance",
+              "text": "AI identifies learning paths, progress, and challenges in real-time. Personalized hints and adaptive difficulty help kids persist without giving up or feeling bored."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 3,
+              "name": "Foster Intrinsic Motivation",
+              "text": "Multiple pathways to competence, personalization for relatedness, and player control for autonomy. Satisfying psychological needs leads to sustained learning motivation."
+            }
+          ]
+        }
+
       default:
         return null
     }

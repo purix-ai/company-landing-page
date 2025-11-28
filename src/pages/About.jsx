@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { FaArrowLeft, FaLinkedin, FaEnvelope, FaRocket, FaLightbulb, FaUsers } from 'react-icons/fa'
 import SEO from '../components/SEO'
+import StructuredData from '../components/StructuredData'
 
 const About = () => {
   const { t } = useTranslation()
@@ -14,6 +15,7 @@ const About = () => {
         keywords="about Wonderix, educational technology company, AI education mission, Wonderix team, edtech innovation"
         url="https://www.wonderix.com/about"
       />
+      <StructuredData type="person" />
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-24 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Back Button */}

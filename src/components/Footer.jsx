@@ -1,4 +1,4 @@
-import { FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import { FaLinkedin, FaInstagram, FaXTwitter } from 'react-icons/fa6'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
@@ -26,6 +26,24 @@ const Footer = () => {
                 aria-label="LinkedIn"
               >
                 <FaLinkedin className="text-xl" />
+              </a>
+              <a
+                href="https://www.instagram.com/wonderix_edtech/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="Instagram"
+              >
+                <FaInstagram className="text-xl" />
+              </a>
+              <a
+                href="https://x.com/wonderix_edtech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="X (Twitter)"
+              >
+                <FaXTwitter className="text-xl" />
               </a>
             </div>
           </div>

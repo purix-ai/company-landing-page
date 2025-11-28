@@ -1,31 +1,21 @@
 # Robots.txt for www.wonderix.com
-# Allow all crawlers
 
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
 
-# Sitemaps
+# Sitemap
 Sitemap: https://www.wonderix.com/sitemap.xml
 
-# Crawl-delay for politeness
-Crawl-delay: 1
-
-# Specific rules for major search engines
+# Googlebot-specific (fast indexing)
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 0
 
-User-agent: Slurp
-Allow: /
-Crawl-delay: 0
-
-# Block bad bots
+# Block resource-heavy bots
 User-agent: AhrefsBot
 Disallow: /
 
