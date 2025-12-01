@@ -1,10 +1,18 @@
-import { FaRocket, FaPlay } from 'react-icons/fa'
+import { FaRocket, FaPlay, FaCalendarAlt } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next'
 
 const Hero = () => {
   const { t } = useTranslation()
+
+  // Google Calendar appointment scheduling URL
+  const SCHEDULE_URL = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3EF7SxLVJo_pux9CiaYESLuqKc2InXKTopQ97w80HLzYVwi74C8yi39togkEtk4F4Fj4cG21Ue?gv=true'
+
   const scrollToWaitlist = () => {
     document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const handleSchedule = () => {
+    window.open(SCHEDULE_URL, '_blank', 'noopener,noreferrer')
   }
 
   return (
@@ -42,6 +50,13 @@ const Hero = () => {
                   className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-secondary-500 text-white rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
                 >
                   {t('hero.joinWaitlist')}
+                </button>
+                <button
+                  onClick={handleSchedule}
+                  className="px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2"
+                >
+                  <FaCalendarAlt />
+                  {t('hero.scheduleWithFounder')}
                 </button>
                 {/* Demo button - uncomment when video is ready
                 <button className="px-8 py-4 bg-white text-gray-700 rounded-full font-semibold text-lg border-2 border-gray-200 hover:border-primary-500 transition-colors flex items-center justify-center gap-2">

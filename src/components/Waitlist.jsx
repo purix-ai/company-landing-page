@@ -1,15 +1,22 @@
-import { FaEnvelope, FaCheckCircle, FaUsers } from 'react-icons/fa'
+import { FaCheckCircle, FaUsers } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next'
 
 const Waitlist = () => {
   const { t, i18n } = useTranslation()
-  
+
   // Google Form URL for Founding Family Program
   const FOUNDING_FAMILY_FORM_URL = 'https://forms.gle/NXSDvaYcy92VEs1d7'
-  
+
+  // Google Form URL for second batch waitlist
+  const SECOND_BATCH_FORM_URL = 'https://forms.gle/LN7N6Yhv4qU7HiCn6'
+
   const handleJoinWaitlist = () => {
     // Open the Founding Family Program application form
     window.open(FOUNDING_FAMILY_FORM_URL, '_blank', 'noopener,noreferrer')
+  }
+
+  const handleJoinSecondBatch = () => {
+    window.open(SECOND_BATCH_FORM_URL, '_blank', 'noopener,noreferrer')
   }
 
   return (
@@ -57,13 +64,22 @@ const Waitlist = () => {
 
               <div className="border-t pt-8">
                 <div className="text-center">
-                  <button
-                    disabled
-                    className="inline-flex items-center px-8 py-4 bg-gray-400 text-white rounded-full font-semibold text-lg cursor-not-allowed opacity-60"
-                  >
-                    <FaCheckCircle className="mr-3" />
-                    {t('waitlist.fullButton')}
-                  </button>
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button
+                      disabled
+                      className="inline-flex items-center px-8 py-4 bg-gray-400 text-white rounded-full font-semibold text-lg cursor-not-allowed opacity-60"
+                    >
+                      <FaCheckCircle className="mr-3" />
+                      {t('waitlist.fullButton')}
+                    </button>
+
+                    <button
+                      onClick={handleJoinSecondBatch}
+                      className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500 to-secondary-500 text-white rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
+                    >
+                      {t('waitlist.secondBatchButton')}
+                    </button>
+                  </div>
 
                   <p className="mt-4 text-sm text-gray-600">
                     {t('waitlist.fullMessage')}

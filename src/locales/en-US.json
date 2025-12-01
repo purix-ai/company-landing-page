@@ -14,6 +14,7 @@
     "subheadline": "Children Fall in Love with Learning and Parents Feel Incredibly Relaxed",
     "description": "Combining teacher expertise with deep gamification design, where learning itself becomes the game rules, not just quizzes wrapped in rewards.",
     "joinWaitlist": "Join Founding Family Program",
+    "scheduleWithFounder": "Schedule with Founder",
     "watchDemo": "Watch Demo",
     "stats": {
       "learningBoost": "Learning Effectiveness Boost",
@@ -82,6 +83,7 @@
     },
     "joinButton": "Apply for Founding Family Program",
     "fullButton": "Founding Family Program - Full",
+    "secondBatchButton": "Join Second Batch Waitlist",
     "noSpam": "We value your trust. Only 10 spots available. Your feedback will help us build better learning experiences for all children.",
     "fullMessage": "Thank you for your interest! The Founding Family Program has reached capacity. Stay tuned for future opportunities.",
     "betaRelease": "Q4 2025"

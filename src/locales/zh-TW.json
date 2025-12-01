@@ -14,6 +14,7 @@
     "subheadline": "讓孩子愛上學習 家長無比輕鬆",
     "description": "結合老師經驗與深度遊戲化設計，讓學習本身就是遊戲規則,而非只是包裹獎勵的測驗。",
     "joinWaitlist": "加入創始家庭計畫",
+    "scheduleWithFounder": "預約創辦人時間",
     "watchDemo": "觀看示範",
     "stats": {
       "learningBoost": "學習成效提升",
@@ -82,6 +83,7 @@
     },
     "joinButton": "申請創始家庭計畫",
     "fullButton": "創始家庭計畫 - 已額滿",
+    "secondBatchButton": "候補第二梯次",
     "noSpam": "我們珍視您的信任。僅限 10 組家庭名額—您的回饋將幫助我們為所有孩子打造更好的學習體驗。",
     "fullMessage": "感謝您的關注！創始家庭計畫名額已滿。",
     "betaRelease": "2025 年第四季"
